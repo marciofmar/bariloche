@@ -1,0 +1,2113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roteiro Bariloche - Guia de Atividades</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🏔️ Roteiro Bariloche</h1>
+            <p>Seu guia completo de atividades e atrações</p>
+        </div>
+        <div class="filters">
+            <button class="filter-btn active" onclick="filterActivities('todos')">Todos</button>
+            <button class="filter-btn" onclick="filterActivities('nature')">Natureza</button>
+            <button class="filter-btn" onclick="filterActivities('culture')">Cultura</button>
+            <button class="filter-btn" onclick="filterActivities('gastronomy')">Premium</button>
+            <button class="filter-btn" onclick="filterActivities('landscape')">Panorâmico</button>
+            <button class="filter-btn" onclick="filterActivities('centro')">Centro</button>
+            <button class="filter-btn" onclick="filterActivities('preparation')">Preparação</button>
+            <button class="filter-btn" onclick="filterActivities('snow')">Neve</button>
+            <button class="filter-btn" onclick="filterActivities('sport')">Esporte</button>
+        </div>
+
+        <!-- DIA 1 - Chegada -->
+        <div class="day-section">
+            <div class="day-header">📅 Dia 1 - Chegada</div>
+           
+            <!-- PASSEIO PELO CENTRO DE BARILOCHE -->
+            <div class="activities-grid">
+                <div class="activity-card" data-type="centro">
+                    <div class="activity-type type-culture">Centro</div>
+                    <div class="activity-header">
+                        <div>
+                            <div class="activity-title">Passeio pelo Centro de Bariloche</div>
+                            <div class="activity-time">Noite</div>
+                        </div>
+                    </div>
+                    <div class="price-tag price-free">Gratuito</div>
+                    <div class="activity-description">
+                        Primeira exploração da cidade: caminhe pela Calle Mitre, Praça Cívica, lojas de chocolate, fotos com o lago e jantar típico.
+                    </div>
+                    <div class="activity-details">
+                        <div class="detail-item">
+                            <div class="detail-icon"></div>
+                            <span>Ideal para primeiro contato com a cidade</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- PASSEIO PELO CENTRO DE BARILOCHE -->
+
+        </div>
+
+        <!-- DIA 2 -->
+        <div class="day-section">
+            <div class="day-header">📅 Dia 2 - Circuito Panorâmico</div>
+            <div class="activities-grid">
+
+                <!-- CIRCUITO CHICO -->
+                <div class="activity-card" data-type="landscape">
+                    <div class="activity-type type-nature">Panorâmica</div>
+                    <div class="activity-header">
+                        <div>
+                            <div class="activity-title">Circuito Chico + Cerro Campanário</div>
+                            <div class="activity-time">Manhã ou Tarde</div>
+                        </div>
+                    </div>
+                    <div class="price-tag">$33 total</div>
+                    <div class="activity-description">
+                        Roteiro clássico: paisagens espetaculares e mirantes. Subida de teleférico para ver Bariloche do alto.
+                    </div>
+                    <div class="activity-details">
+                        <div class="detail-item">
+                            <div class="detail-icon"></div>
+                            <span>Circuito Chico: 8:30h - 12:30h ou 14:30h às 18:30h</span>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-icon"></div>
+                            <span>Cerro Campanario - Horário: 9h às 17h</span>
+                        </div>
+                        <span class="divisor"></span>
+                        <div class="detail-item selectable-detail">
+                            <input type="radio" class="detail-checkbox" data-value="20" data-moeda="usd" id="cc-circuito" name="pacote">
+                            <label for="cc-circuito"><span class="atracao">Circuito Chico</span>: <span class="preco">$20 USD</span></label>
+                        </div>
+                        <div class="detail-item selectable-detail">
+                            <input type="radio" class="detail-checkbox" data-value="33" data-moeda="usd" id="cc-campanario" name="pacote">
+                            <label for="cc-campanario"><span class="atracao">Circuito Chico + Cerro Campanário (teleférico)</span>: <span class="preco">$33 USD</span></label>
+                        </div>
+
+                    </div>
+                    <div class="acoes-passeio">
+                        <span class="acao-link saiba-mais" onclick="toggleSaibaMais(this)">📖 Saiba Mais ▼</span>
+                        <span class="acao-link onde-comprar-link" onclick="toggleDropdown(this)">💳 Onde Comprar ▼</span>
+                    </div>
+                    <div class="saiba-mais-content">
+                        <div class="saiba-mais-text">
+                            <div class="info-section intro">
+                                <h3>🏆 O Passeio Mais Tradicional de Bariloche</h3>
+                                <p>Como o <strong>cartão postal vivo</strong> da cidade, o Circuito Chico é a experiência essencial que todo visitante deve fazer! É a introdução perfeita aos tesouros naturais e arquitetônicos que tornaram Bariloche mundialmente famosa.</p>
+                            </div>
+
+                            <div class="info-section attractions">
+                                <h3>🌟 Principais Atrações do Circuito</h3>
+                                <p>Como um tour pelos highlights de uma galeria de arte natural, o Circuito Chico apresenta o melhor da região em uma única jornada:</p>
+                                
+                                <div class="circuit-highlights">
+                                    <h4>📍 O que Você Verá:</h4>
+                                    <ul>
+                                        <li><strong>Lagos cristalinos</strong> com águas de cor única</li>
+                                        <li><strong>Mirantes panorâmicos</strong> com vistas de tirar o fôlego</li>
+                                        <li><strong>Hotel Llao Llao</strong> - ícone da arquitetura patagônica</li>
+                                        <li><strong>Paisagens andinas</strong> que definem a identidade de Bariloche</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="info-section campanario">
+                                <h3>🚠 Cerro Campanário - A Vista Mais Famosa</h3>
+                                <p>Como um observatório natural privilegiado, o Cerro Campanário oferece a experiência visual mais icônica de toda a Patagônia:</p>
+                                
+                                <div class="campanario-experience">
+                                    <h4>🔭 A Experiência no Topo:</h4>
+                                    <div class="experience-item">
+                                        <strong>Teleférico panorâmico:</strong> Subida cênica até o mirante principal
+                                    </div>
+                                    <div class="experience-item highlight-view">
+                                        <strong>Vista 360°:</strong> A melhor perspectiva panorâmica da região
+                                    </div>
+                                    <div class="experience-item">
+                                        <strong>Chocolate quente especial:</strong> Degustação obrigatória no topo!
+                                    </div>
+                                    <div class="experience-item">
+                                        <strong>Foto perfeita:</strong> O cenário mais fotografado de Bariloche
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="info-section llao-llao">
+                                <h3>🏨 Hotel Llao Llao - Ícone Arquitetônico</h3>
+                                <p>Como um castelo europeu transplantado para a Patagônia, o famoso Hotel Llao Llao é muito mais que hospedagem - é um marco histórico e cultural:</p>
+                                
+                                <div class="llao-llao-features">
+                                    <ul>
+                                        <li><strong>Arquitetura única:</strong> Estilo alpino em cenário patagônico</li>
+                                        <li><strong>História viva:</strong> Símbolo do turismo de luxo na Argentina</li>
+                                        <li><strong>Localização privilegiada:</strong> Entre lagos e montanhas</li>
+                                        <li><strong>Referência mundial:</strong> Um dos hotéis mais fotografados da América do Sul</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="info-section traditional">
+                                <h3>🎯 Por Que É Imperdível</h3>
+                                <p>Como a primeira impressão que marca para sempre, o Circuito Chico é considerado o passeio mais tradicional por boas razões:</p>
+                                
+                                <div class="traditional-reasons">
+                                    <ul>
+                                        <li><strong>Introdução completa:</strong> Apresenta todos os elementos que definem Bariloche</li>
+                                        <li><strong>Acessível a todos:</strong> Adequado para todas as idades e condições físicas</li>
+                                        <li><strong>Duração ideal:</strong> Meio dia bem aproveitado</li>
+                                        <li><strong>Clima independente:</strong> Bonito em qualquer época do ano</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="info-section tip">
+                                <h3>☕ Dica Gastronômica Especial</h3>
+                                <p>Como uma tradição sagrada dos visitantes, <strong>não esqueça de experimentar o chocolate quente no topo do Cerro Campanário</strong>! É a combinação perfeita: a vista mais espetacular da região acompanhada do sabor mais tradicional de Bariloche. Uma experiência que aquece o corpo e a alma!</p>
+                            </div>
+
+                            <div class="info-section highlight">
+                                <h3>✨ A Essência de Bariloche</h3>
+                                <p>Como um resumo poético de tudo que torna Bariloche especial, o Circuito Chico captura em poucas horas a <strong>essência completa da região</strong>: a grandiosidade dos lagos andinos, a elegância da arquitetura alpina, a vastidão das montanhas e a tradição do chocolate artesanal. É o passeio que explica por que milhões de pessoas se apaixonam por este cantinho único da Patagônia!</p>
+                            </div>
+
+                            
+                        </div>
+                    </div>
+                    <div class="onde-comprar-content">
+                        <div class="onde-comprar-lista">
+                            <a href="https://www.denomades.com/bariloche/circuito-chico-id991" target="_blank">Denomades - $22 USD</a>
+                            <a href="https://www.zigzagtravel.com.ar/es/catalogo/san_carlos_de_bariloche-245/circuito_chico-1.html" target="_blank">ZigZag - $18 USD</a>
+                            <a href="https://www.turaccion.com.ar/produto/circuito-chico/" target="_blank">Turaccion - $26 USD</a>
+                            <a href="https://www.tangol.com/por/argentina/bariloche/passeios/classico/circuito-pequeno_t_129" target="_blank">Tangol Tours</a>
+                            <a href="http://turisur.com.ar/?c=reservas&v=reserva&id_excursion=26&lang=es" target="_blank">Turisur - $23 USD</a>
+                            <div class="onde-comprar-fisico"><b>OTP Patagonia:</b> Endereço: Mitre 265 - Galería Nahuel Huapi - Local 05 - Telefone: 0294-443-5258 - Preços sob consulta</div>
+                            <div class="onde-comprar-fisico"><b>Destino Andino:</b> Mitre 219 (Centro) - $26 USD</div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <!-- CIRCUITO CHICO -->
+
+                 <!-- ISLA VICTORIA -->
+                <div class="activity-card" data-type="nature" style="transform: translateY(0px) scale(1);">
+                    <div class="activity-type type-nature">Natureza</div>
+                    <div class="activity-header">
+                        <div>
+                            <div class="activity-title">Circuito Chico + Cerro Campanario +<br> Isla Victoria + Bosque de Arrayanes</div>
+                            <div class="activity-time">Manhã e Tarde</div>
+                        </div>
+                    </div>
+                    <div class="price-tag">$122 total</div>
+                    <div class="activity-description">
+                        Passeio de barco clássico pelo Lago Nahuel Huapi. Floresta única de arrayanes centenários.
+                    </div>
+                    <div class="activity-details">
+                        <div class="detail-item">
+                            <div class="detail-icon"></div>
+                            <span>Saída: Puerto Pañuelo</span>
+                        </div>
+                        <span class="divisor"></span>
+                        <div class="detail-item selectable-detail">
+                            <input type="radio" class="detail-checkbox" data-value="120" data-moeda="usd" id="isla-pass1" name="pacote">
+                            <label for="isla-pass1"><span class="atracao">Somente Isla e Bosque + transfer (7 horas)</span>: <span class="preco">$100 USD + $20 USD taxas</span></label>
+                        </div>
+                        <div class="detail-item selectable-detail">
+                            <input type="radio" class="detail-checkbox" data-value="121" data-moeda="usd" id="isla-pass2" name="pacote">
+                            <label for="isla-pass2"><span class="atracao">Pacote Isla com C. Chico s/transfer (10 horas)</span>: <span class="preco">$101 USD + $20 USD taxas</span></label>
+                        </div>
+                        <div class="detail-item selectable-detail">
+                            <input type="radio" class="detail-checkbox" data-value="135" data-moeda="usd" id="isla-pass3" name="pacote">
+                            <label for="isla-pass3"><span class="atracao">Pacote Isla com C. Chico + transfer (10 horas)</span>: <span class="preco">$115 USD + $20 USD taxas</span></label>
+                        </div>
+                        
+                    </div>
+
+                    <div class="acoes-passeio">
+                        <span class="acao-link saiba-mais" onclick="toggleSaibaMais(this)">📖 Saiba Mais ▼</span>
+                        <span class="acao-link onde-comprar-link" onclick="toggleDropdown(this)">💳 Onde Comprar ▼</span>
+                    </div>
+                    <div class="saiba-mais-content">
+                        <div class="saiba-mais-text">
+                            
+                            <div class="info-section intro">
+                                <h3>🌿 Duas Joias Naturais em Um Passeio</h3>
+                                <p>Como uma expedição botânica pelos tesouros do Lago Nahuel Huapi, este passeio combina história natural, biodiversidade única e paisagens de tirar o fôlego em uma navegação inesquecível de <strong>9 horas</strong>.</p>
+                            </div>
+
+                            <div class="info-section">
+                                <h3>🏝️ Isla Victoria</h3>
+                                <p>A maior ilha do lago (31 km²) funciona como um verdadeiro <strong>jardim botânico natural</strong> que abriga um viveiro de plantas nativas e exóticas único na Patagônia.</p>
+                                
+                                <div class="attraction-details">
+                                    <h4>🌲 O que Você Encontrará:</h4>
+                                    <ul>
+                                        <li><strong>Sequoias gigantes</strong> majestosas</li>
+                                        <li><strong>Abetos</strong> imponentes</li>
+                                        <li><strong>Espécies endêmicas</strong> da região patagônica</li>
+                                        <li><strong>Trilhas autoguiadas</strong> para exploração livre</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="info-section highlight">
+                                <h3>🌳 Bosque de Arrayanes - O Verdadeiro Tesouro!</h3>
+                                <p>Uma das últimas florestas puras de arrayán do mundo, localizada na Península Quetrihué. Como cenário de conto de fadas, esta floresta única <strong>inspirou a Disney para os cenários de "Bambi"</strong>!</p>
+                                
+                                <div class="arrayanes-details">
+                                    <h4>✨ Características Únicas dos Arrayanes:</h4>
+                                    <ul>
+                                        <li><strong>Troncos cor de canela</strong> com textura aveludada ao toque</li>
+                                        <li><strong>Longevidade impressionante:</strong> podem viver até 300 anos</li>
+                                        <li><strong>Raridade mundial:</strong> uma das últimas florestas puras da espécie</li>
+                                        <li><strong>Atmosfera mágica</strong> que transporta para um mundo encantado</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="info-section">
+                                <h3>⛵ Experiência de Navegação</h3>
+                                <p>Como uma aula de ecologia ao ar livre, a navegação oferece muito mais que transporte:</p>
+                                
+                                <div class="navigation-features">
+                                    <h4>🚢 Durante a Viagem:</h4>
+                                    <ul>
+                                        <li><strong>Catamarã moderno</strong> com conforto e segurança</li>
+                                        <li><strong>Paisagens andinas deslumbrantes</strong> em 360°</li>
+                                        <li><strong>Fauna aquática:</strong> gaivotas, patos e cisnes</li>
+                                        <li><strong>Interpretação ambiental</strong> com guias especializados</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="info-section tips">
+                                <h3>📷 Dicas Práticas</h3>
+                                <p>Passeio contemplativo ideal para <strong>amantes da natureza e fotografia</strong>. Como qualquer aventura ao ar livre, prepare-se adequadamente:</p>
+                                
+                                <div class="practical-tips">
+                                    <h4>🎒 O que Levar:</h4>
+                                    <ul>
+                                        <li><strong>Protetor solar:</strong> reflexo da água intensifica os raios UV</li>
+                                        <li><strong>Agasalho:</strong> vento no lago pode ser intenso</li>
+                                        <li><strong>Câmera/celular:</strong> paisagens imperdíveis para fotografar</li>
+                                        <li><strong>Calçado confortável:</strong> para as trilhas autoguiadas</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="info-section summary">
+                                <h3>🌟 Resumo da Experiência</h3>
+                                <p>Uma jornada única que combina <strong>educação ambiental, beleza natural e história viva</strong>. É como visitar dois museus naturais ao ar livre, onde cada árvore conta uma história e cada paisagem revela um segredo da Patagônia.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="onde-comprar-content">
+                        <div class="onde-comprar-lista">
+                            <a href="https://www.zigzagtravel.com.ar/pb/catalogo/san_carlos_de_bariloche-245/circuito_chico_+_ilha_victoria_e_floresta_dos_arrayanes-137.html" target="_blank">ZigZag (pacote com os 2 passeios)</a>
+                            <a href="https://destinosul.com.br/ilha-victoria-e-bosque-de-arrayanes.html" target="_blank">Destino Sul (só isla)</a>
+                                                        
+                        </div>
+                    </div>    
+                </div>
+                <!-- ISLA VICTORIA -->
+
+                <!-- CERRO OTTO -->
+                <div class="activity-card" data-type="landscape" style="transform: translateY(0px) scale(1);">
+                    <div class="activity-type type-nature">Panorâmica</div>
+                    <div class="activity-header">
+                        <div>
+                            <div class="activity-title">Cerro Otto + Confeitaria Giratória</div>
+                            <div class="activity-time">Manhã ou Tarde</div>
+                        </div>
+                    </div>
+                    <div class="price-tag">$26 + extras</div>
+                    <div class="activity-description">
+                        Teleférico + confeitaria com vista 360°. Atividades extras: muro de escalada, skibunda, raquetes, tirolesa.
+                    </div>
+                    <div class="activity-details">
+                        <div class="detail-item">
+                            <div class="detail-icon"></div>
+                            <span>Bilheteria na base da estação inicial: de 10h-16:30 da tarde</span>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-icon"></div>
+                            <span>Saída do ônibus para o teleférico (R. Villegas com R. Mitre): 10h-16:30h</span>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-icon"></div>
+                            <span>Saída do ônibus para o centro: até 18:45h</span>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-icon"></div>
+                            <span>Última subida pelo teleférico: 16:30h</span>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-icon"></div>
+                            <span>Última descida pelo teleférico: 18:30h</span>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-icon"></div>
+                            <span>Funcionamento da confeitaria: 10:00h às 18:00h</span>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-icon"></div>
+                            <span>Tempo mínimo para aproveitar a atração: 2,5h</span>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-icon"></div>
+                            <span>Tempo ideal para aproveitar a atração: 4h</span>
+                        </div>
+                        <span class="divisor"></span>
+                        <div class="detail-item selectable-detail">
+                            <input type="checkbox" class="detail-checkbox" data-value="26" data-moeda="usd" id="otto-pass1">
+                            <label for="otto-pass1"><span class="atracao">Teleférico</span>: <span class="preco">$26 USD</span></label>
+                        </div>
+                        <div class="detail-item selectable-detail">
+                            <input type="checkbox" class="detail-checkbox" data-value="13" data-moeda="usd" id="otto-pass2">
+                            <label for="otto-pass2"><span class="atracao">Muro de escalada</span>: <span class="preco">$13 USD</span></label>
+                        </div>
+                        <div class="detail-item selectable-detail">
+                            <input type="checkbox" class="detail-checkbox" data-value="17" data-moeda="usd" id="otto-pass3">
+                            <label for="otto-pass3"><span class="atracao">Tirolesa</span>: <span class="preco">$17 USD</span></label>
+                        </div>
+                        <div class="detail-item selectable-detail">
+                            <input type="checkbox" class="detail-checkbox" data-value="22" data-moeda="usd" id="otto-pass4">
+                            <label for="otto-pass4"><span class="atracao">Muro de escalada + tirolesa</span>: <span class="preco">$22 USD</span></label>
+                        </div>
+                    </div>
+
+                    <div class="acoes-passeio">
+                        <span class="acao-link saiba-mais" onclick="toggleSaibaMais(this)">📖 Saiba Mais ▼</span>
+                        <span class="acao-link onde-comprar-link" onclick="toggleDropdown(this)">💳 Onde Comprar ▼</span>
+                    </div>
+                    <div class="saiba-mais-content">
+                        <div class="saiba-mais-text">
+                            <div class="info-section">
+                                <h3>🚌 Transporte e Horários</h3>
+                                <p>O complexo oferece ônibus gratuito que funciona como um serviço de shuttle - assim como hotéis fazem com aeroportos. O ponto de partida é no centro (esquina Mitre e Villegas), com saídas das 10h às 16h30. O último retorno ao centro é às 18h45.</p>
+                            </div>
+
+                            <div class="info-section">
+                                <h3>🚠 Teleférico</h3>
+                                <p>Funciona das 10h às 18h30, sendo a última subida às 16h30 e última descida às 18h30. O sistema utiliza cabines fechadas para maior segurança e conforto.</p>
+                            </div>
+
+                            <div class="info-section">
+                                <h3>🎫 Ingressos</h3>
+                                <p>Podem ser adquiridos em três locais:</p>
+                                <ul>
+                                    <li>Agências de receptivo na cidade</li>
+                                    <li>Bilheteria no centro (Mitre esquina Villegas)</li>
+                                    <li>Bilheteria na rua San Martín esquina Independencia</li>
+                                </ul>
+                            </div>
+
+                            <div class="info-section">
+                                <h3>🎯 Atrações no Topo</h3>
+                                <ul>
+                                    <li><strong>Confeitaria giratória</strong> (10h às 18h)</li>
+                                    <li><strong>Atividades extras</strong> pagas no local: esquibunda, caminhada com raquetes, tirolesa, escalada</li>
+                                    <li><strong>Funicular</strong> para facilitar deslocamentos após as atividades</li>
+                                </ul>
+                            </div>
+
+                            <div class="info-section highlight">
+                                <h3>⚠️ Informação Importante</h3>
+                                <p>A bilheteria na base funciona das 10h às 16h30, coordenando com os horários do teleférico.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="onde-comprar-content">
+                        <div class="onde-comprar-lista">
+                            <a href="https://www.telefericobariloche.com.ar/tarifas-del-teleferico-cerro-otto" target="_blank">Cerro Otto</a>
+                            
+                        </div>
+                    </div>
+                </div>
+                <!-- CERRO OTTO -->
+
+                <!-- ALUGUEL DE ROUPAS -->
+                <div class="activity-card" data-type="preparation">
+                    <div class="activity-type type-culture">Preparação</div>
+                    <div class="activity-header">
+                        <div>
+                            <div class="activity-title">Aluguel de Roupas de Neve</div>
+                            <div class="activity-time">Final da tarde</div>
+                        </div>
+                    </div>
+                    <div class="price-tag price-variable">Variável</div>
+                    
+                    <div class="activity-description">
+                        Essencial para brincar na neve com conforto. Alugue botas, calças, jaquetas e luvas. 
+                        
+                    </div>
+
+                    <div class="activity-details">
+                        <div class="detail-item">
+                            <div class="detail-icon"></div>
+                            <span>Pode alugar equipo inteiro ou apenas duas peças</span>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-icon"></div>
+                            <span><a href="https://www.zigzagtravel.com.ar/pb/catalogo/san_carlos_de_bariloche-245/aluguel_de_roupa_para_neve-70.html#/availability/search/2025/7/18" target="_blank">ZigZag</a></span>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-icon"></div>
+                            <span>El Yeti (Mitre 83)</span>
+                        </div>
+                        
+                        <div class="detail-item">
+                            <div class="detail-icon"></div>
+                            <span>Patagonia (Palacios 151)</span>
+                        </div><div class="detail-item">
+                            <div class="detail-icon"></div>
+                            <span>Ernie Rental (San Martín 571)</span>
+                        </div><div class="detail-item">
+                            <div class="detail-icon"></div>
+                            <span>Taos (San Martín 460)</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- ALUGUEL DE ROUPAS -->
+
+            </div>
+        </div>
+
+        <!-- DIA 3 - Dia da Neve -->
+        <div class="day-section">
+            <div class="day-header">📅 Dia 3 - Dia da Neve</div>
+            <div class="activities-grid">
+                
+                <!-- PIEDRAS BLANCAS -->
+                <div class="activity-card" data-type="snow">
+                    <div class="activity-type type-adventure">Neve</div>
+                    <div class="activity-header">
+                        <div>
+                            <div class="activity-title">Piedras Blancas</div>
+                            <div class="activity-time">Manhã ou tarde</div>
+                        </div>
+                    </div>
+                    <div class="price-tag">$65-$90</div>
+                    <div class="activity-description">
+                        Skibunda, tubing, tirolesa e muita diversão para a família inteira na neve.
+                    </div>
+                    <div class="activity-details">
+                        <div class="detail-item">
+                            <div class="detail-icon"></div>
+                            <span>Horário: Seg-Sáb 9h30-17h</span>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-icon"></div>
+                            <span>Tempo ideal: skibunda (3 hs); Zipline ou Tubing (1:30hs); 3 juntas (5 hs)</span>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-icon"></div>
+                            <span>Como chegar: Comprar o transporte na loja central ou agências ou ir de carro, mas tem que ter correntes na roda.</span>
+                        </div>
+                        <span class="divisor"></span>
+                        <div class="detail-item selectable-detail">
+                            <input type="checkbox" class="detail-checkbox" data-value="65" data-moeda="usd" id="pb-skibunda">
+                            <label for="pb-skibunda"><span class="atracao">Piedras Blancas - Entrada + 4 descidas</span>: <span class="preco">$65 USD</span></label>
+                        </div>
+                        <div class="detail-item selectable-detail">
+                            <input type="checkbox" class="detail-checkbox" data-value="90" data-moeda="usd" id="pb-tubing">
+                            <label for="pb-tubing"><span class="atracao">Piedras Blancas c/ tubing</span>: <span class="preco">$90 USD</span></label>
+                        </div>
+                        <div class="detail-item selectable-detail">
+                            <input type="checkbox" class="detail-checkbox" data-value="35" data-moeda="usd" id="pb-snowsafari">
+                            <label for="pb-snowsafari"><span class="atracao">Snowsafari (trenó motorizado)</span>: <span class="preco">$35 USD</span></label>
+                        </div>
+
+                        
+                        
+                    </div>
+                    <div class="acoes-passeio">
+                        <span class="acao-link saiba-mais" onclick="toggleSaibaMais(this)">📖 Saiba Mais ▼</span>
+                        <span class="acao-link onde-comprar-link" onclick="toggleDropdown(this)">💳 Onde Comprar ▼</span>
+                    </div>
+                    <div class="saiba-mais-content">
+                        <div class="saiba-mais-text">
+                            <div class="info-section intro">
+                                <h3>🎢 Diversão Garantida para Toda a Família</h3>
+                                <p>Como um <strong>parque de diversões na montanha</strong>, Piedras Blancas é o destino perfeito para quem busca adrenalina e alegria em família! É o local onde crianças e adultos se transformam em crianças novamente, deslizando pela neve com sorrisos de orelha a orelha.</p>
+                            </div>
+
+                            <div class="info-section activities">
+                                <h3>🛷 Atividades Emocionantes</h3>
+                                <p>Como um playground gigante na neve, Piedras Blancas oferece atividades que despertam o lado criança de qualquer um:</p>
+                                
+                                <div class="activities-list">
+                                    <h4>🎯 Diversões Disponíveis:</h4>
+                                    <div class="activity-item">
+                                        <strong>🛷 Skibunda:</strong> Pistas especiais para descer deslizando sentado - pura alegria!
+                                    </div>
+                                    <div class="activity-item">
+                                        <strong>🎈 Tubing:</strong> Descida em bóias infláveis - como um tobogã gigante na neve
+                                    </div>
+                                    <div class="activity-item">
+                                        <strong>🪂 Tirolesa:</strong> Voo panorâmico sobre a paisagem nevada - adrenalina nas alturas
+                                    </div>
+                                    <div class="activity-item highlight-activity">
+                                        <strong>👨‍👩‍👧‍👦 Para todas as idades:</strong> Diversão garantida desde crianças até avós
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="info-section family-fun">
+                                <h3>👨‍👩‍👧‍👦 Experiência Familiar Perfeita</h3>
+                                <p>Como um lugar mágico onde gerações se conectam, Piedras Blancas é o destino ideal para criar memórias em família:</p>
+                                
+                                <div class="family-features">
+                                    <ul>
+                                        <li><strong>Segurança total:</strong> Atividades supervisionadas e equipamentos adequados</li>
+                                        <li><strong>Diversão inclusiva:</strong> Atividades para diferentes níveis de aventura</li>
+                                        <li><strong>Ambiente familiar:</strong> Espaço pensado para o conforto de todos</li>
+                                        <li><strong>Memórias únicas:</strong> Experiências que ficam na lembrança para sempre</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="info-section refuge">
+                                <h3>☕ O Refúgio Aconchegante</h3>
+                                <p>Como uma cabana de conto de fadas, o refúgio de Piedras Blancas oferece o aquecimento perfeito após as aventuras na neve:</p>
+                                
+                                <div class="refuge-experience">
+                                    <h4>🏠 Conforto na Montanha:</h4>
+                                    <ul>
+                                        <li><strong>Ambiente aquecido:</strong> Refúgio do frio da montanha</li>
+                                        <li><strong>Vista panorâmica:</strong> Observar a paisagem nevada em conforto</li>
+                                        <li><strong>Descanso merecido:</strong> Recarregar as energias entre as atividades</li>
+                                        <li><strong>Convívio familiar:</strong> Momento para compartilhar as aventuras</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="info-section chocolate-tip">
+                                <h3>🍫 Dica Imperdível do Refúgio</h3>
+                                <p>Como uma tradição sagrada da montanha, <strong>não esqueça o chocolate quente do refúgio</strong>! É a combinação perfeita: o calor reconfortante da bebida aquecendo as mãos geladas, enquanto você admira a paisagem nevada. É o momento mais gostoso do dia - quando o frio lá fora torna o calor lá dentro ainda mais especial!</p>
+                            </div>
+
+                            <div class="info-section perfect-day">
+                                <h3>🌟 O Dia Perfeito</h3>
+                                <p>Como um roteiro de felicidade, um dia em Piedras Blancas segue a fórmula perfeita:</p>
+                                
+                                <div class="day-sequence">
+                                    <div class="sequence-item">
+                                        <strong>1.</strong> Chegada e equipamentos
+                                    </div>
+                                    <div class="sequence-item">
+                                        <strong>2.</strong> Diversão nas pistas (skibunda, tubing, tirolesa)
+                                    </div>
+                                    <div class="sequence-item">
+                                        <strong>3.</strong> Pausa no refúgio com chocolate quente
+                                    </div>
+                                    <div class="sequence-item">
+                                        <strong>4.</strong> Mais aventuras na neve
+                                    </div>
+                                    <div class="sequence-item highlight-moment">
+                                        <strong>5.</strong> Memórias inesquecíveis para toda a família
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="info-section highlight">
+                                <h3>🎉 Por Que Escolher Piedras Blancas</h3>
+                                <p>Como um oásis de alegria na montanha, Piedras Blancas oferece algo raro: <strong>diversão pura e simples para toda a família</strong>. É o lugar onde não importa a idade - todos se divertem igualmente, criando vínculos e risadas que durarão muito além da viagem. É diversão garantida no seu sentido mais verdadeiro!</p>
+                            </div>
+
+                            <div class="source-note">
+                                <p><em>Nota: Estas informações foram baseadas no texto fornecido pelo usuário e podem estar sujeitas a alterações sazonais ou operacionais.</em></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="onde-comprar-content">
+                        <div class="onde-comprar-lista">
+                            <a href="https://www.piedrasblancasbariloche.com/compra-tu-entrada/" target="_blank">Piedras Blancas (Oficial)</a>
+                            <div class="onde-comprar-fisico"><b>Loja no centro:</b> QUAGLIA 242 LOC. 10 (ENTRE MITRE Y MORENO)</div>
+                            <div class="onde-comprar-fisico"><b>Complexo Piedras Blancas:</b> Piedras Blancas, Acceso Cerro Otto</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- PIEDRAS BLANCAS -->
+
+                <!-- WINTER PARK E EUCA -->
+                <div class="activity-card" data-type="snow sport">
+                    <div class="activity-type type-adventure">Esportes</div>
+                    <div class="activity-header">
+                        <div>
+                            <div class="activity-title">Winter Park ou Euca</div>
+                            <div class="activity-time">Tarde</div>
+                        </div>
+                    </div>
+                    <div class="price-tag">$28-$153 USD</div>
+                    <div class="activity-description">
+                        Escolha: esqui para iniciantes no Winter Park ou arvorismo radical no Euca.
+                    </div>
+                    <div class="activity-details">
+                        <div class="detail-item">
+                            <div class="detail-icon"></div>
+                            <span>Euca - horários: Todos os dias de 10:00 a 18:00h. Última venda e acceso às 16:30h</span>
+                        </div>
+                        <span class="divisor"></span>
+                        <div class="detail-item selectable-detail">
+                            <input type="checkbox" class="detail-checkbox" data-value="30" data-moeda="usd" id="euca-arvorismo">
+                            <label for="euca-arvorismo"><span class="atracao">Euca - todos os níveis (arvorismo)</span>: <span class="preco">$30 USD</span></label>
+                        </div>
+                        <div class="detail-item selectable-detail">
+                            <input type="checkbox" class="detail-checkbox" data-value="153" data-moeda="usd" id="wp-ski">
+                            <label for="wp-ski"><span class="atracao">Winter Park (6h entre aula de ski e pista)</span>: <span class="preco">$153 USD</span></label>
+                        </div>
+                    </div>
+                    <div class="acoes-passeio">
+                        <span class="acao-link saiba-mais" onclick="toggleSaibaMais(this)">📖 Saiba Mais ▼</span>
+                        <span class="acao-link onde-comprar-link" onclick="toggleDropdown(this)">💳 Onde Comprar ▼</span>
+                    </div>
+                    <div class="saiba-mais-content">
+                        <div class="saiba-mais-text">
+                            
+
+                            <div class="info-section intro">
+                                <h3>🎿 Duas Experiências, Uma Escolha Perfeita</h3>
+                                <p>Como um <strong>menu de aventuras sob medida</strong>, estes dois destinos oferecem experiências completamente diferentes para perfis únicos de aventureiros. Escolha sua modalidade de adrenalina preferida!</p>
+                            </div>
+
+                            <div class="info-section winter-park">
+                                <h3>⛷️ Winter Park - Escola de Esqui Acessível</h3>
+                                <p>Como uma <strong>academia de neve para iniciantes</strong>, o Winter Park é a alternativa perfeita para quem quer aprender esqui sem a intimidação do Catedral:</p>
+                                
+                                <div class="winter-park-features">
+                                    <h4>🎯 Por Que Escolher o Winter Park:</h4>
+                                    <ul>
+                                        <li><strong>Ambiente menos intimidador:</strong> Ideal para primeiros passos no esqui</li>
+                                        <li><strong>Pistas para iniciantes:</strong> Inclinação e velocidade adequadas ao aprendizado</li>
+                                        <li><strong>Custo mais acessível:</strong> Alternativa econômica ao Catedral</li>
+                                        <li><strong>Menos movimento:</strong> Mais espaço e tranquilidade para praticar</li>
+                                        <li><strong>Foco no aprendizado:</strong> Ambiente projetado para quem está começando</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="beginner-benefits">
+                                    <h4>🏫 Vantagens para Iniciantes:</h4>
+                                    <div class="benefit-item">
+                                        <strong>Confiança gradual:</strong> Desenvolva suas habilidades sem pressão
+                                    </div>
+                                    <div class="benefit-item">
+                                        <strong>Segurança primeiro:</strong> Ambiente controlado para aprender
+                                    </div>
+                                    <div class="benefit-item">
+                                        <strong>Investimento inteligente:</strong> Teste sua paixão pelo esqui antes de ir ao Catedral
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="info-section euca">
+                                <h3>🌲 Euca - Adrenalina nas Alturas</h3>
+                                <p>Como um <strong>parque de aventuras vertical</strong>, o Euca leva a adrenalina para as copas das árvores, oferecendo uma experiência única de conexão com a natureza:</p>
+                                
+                                <div class="euca-activities">
+                                    <h4>🚁 Aventuras Aéreas:</h4>
+                                    <div class="benefit-item">
+                                        <strong>🌳 Arvorismo:</strong> Percursos suspensos entre as árvores - como Tarzan moderno!
+                                    </div>
+                                    <div class="benefit-item">
+                                        <strong>🪂 Tirolesas:</strong> Voos panorâmicos sobre a floresta - pura adrenalina!
+                                    </div>
+                                    <div class="benefit-item highlight-adventure">
+                                        <strong>👀 Vista única:</strong> Perspectiva inédita da floresta patagônica
+                                    </div>
+                                </div>
+                                
+                                <div class="euca-experience">
+                                    <h4>💫 A Experiência Completa:</h4>
+                                    <ul>
+                                        <li><strong>Desafio físico:</strong> Teste seus limites de coragem e equilíbrio</li>
+                                        <li><strong>Contato com a natureza:</strong> Aventura sustentável na floresta</li>
+                                        <li><strong>Adrenalina controlada:</strong> Emoção com total segurança</li>
+                                        <li><strong>Memórias únicas:</strong> Experiência que poucos lugares oferecem</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="info-section comparison">
+                                <h3>🤔 Qual Escolher?</h3>
+                                <p>Como personalidades diferentes pedem aventuras diferentes, cada local atende a um perfil específico:</p>
+                                
+                                <div class="choice-guide">
+                                    <div class="choice-option winter">
+                                        <h4>❄️ Escolha Winter Park se você:</h4>
+                                        <ul>
+                                            <li>Quer aprender a esquiar pela primeira vez</li>
+                                            <li>Procura uma opção mais econômica</li>
+                                            <li>Prefere ambiente tranquilo e menos movimentado</li>
+                                            <li>Quer testar se gosta de esportes de neve</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="choice-option euca">
+                                        <h4>🌲 Escolha Euca se você:</h4>
+                                        <ul>
+                                            <li>Busca adrenalina e aventura aérea</li>
+                                            <li>Gosta de desafios físicos e mentais</li>
+                                            <li>Quer uma experiência única na floresta</li>
+                                            <li>Procura atividades em qualquer época do ano</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="info-section highlight">
+                                <h3>✨ Duas Faces da Aventura</h3>
+                                <p>Como duas páginas do mesmo livro de aventuras, Winter Park e Euca representam <strong>experiências complementares</strong> na região de Bariloche. Um oferece a magia do aprendizado na neve em ambiente acolhedor, enquanto o outro proporciona a emoção das alturas em meio à natureza exuberante. Ambos garantem memórias especiais, cada um à sua maneira única!</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="onde-comprar-content">
+                        <div class="onde-comprar-lista">
+                            <a href="https://winterpark.com.ar/tickets" target="_blank">Winter Park (Oficial)</a>
+                            <a href="https://www.zigzagtravel.com.ar/pb/catalogo/san_carlos_de_bariloche-245/dia_de_esqui_iniciante_-_winter_park-73.html#/availability/search/2025/7/18" target="_blank">ZigZag</a>
+                            <a href="https://www.eucabariloche.com/tarifas.html" target="_blank">Euca</a>
+                            <div class="onde-comprar-fisico"><b>Winter Park Ticket Office:</b> Av. de los Pioneros Km 1</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- WINTER PARK E EUCA -->
+
+                <!-- WINTER PARK À NOITE -->
+                <div class="activity-card" data-type="gastronomy" style="transform: translateY(0px) scale(1);">
+                    <div class="activity-type type-gastronomy">Premium</div>
+                    <div class="activity-header">
+                        <div>
+                            <div class="activity-title">Winter Park à Noite</div>
+                            <div class="activity-time">Noite</div>
+                        </div>
+                    </div>
+                    <div class="price-tag price-expensive">R$ 1.280</div>
+                    <div class="activity-description">
+                        Experiência mágica: esqui noturno + show ao vivo + jantar especial com chocolates patagônicos.
+                    </div>
+                    <div class="activity-details">
+                        
+                        <div class="detail-item selectable-detail">
+                            <input type="checkbox" class="detail-checkbox" data-value="1280" data-moeda="brl" id="wp-noite">
+                            <label for="wp-noite"><span class="atracao">Winter Park (esqui, show, jantar e bebidas)</span>: <span class="preco">R$1.280</span></label>
+                        </div>
+                        
+                        
+                    </div>
+
+                    <div class="acoes-passeio">
+                        <span class="acao-link saiba-mais" onclick="toggleSaibaMais(this)">📖 Saiba Mais ▼</span>
+                        <span class="acao-link onde-comprar-link" onclick="toggleDropdown(this)">💳 Onde Comprar ▼</span>
+                    </div>
+
+                    
+                    <div class="saiba-mais-content">
+                        <div class="saiba-mais-text">
+                            <div class="info-section intro">
+                                <h3>🎬 Uma Experiência Cinematográfica na Neve</h3>
+                                <p>Como um <strong>cenário de filme romântico</strong>, o Winter Park à noite oferece uma das experiências mais exclusivas e memoráveis de Bariloche, combinando aventura, cultura e gastronomia em um ambiente mágico sob as estrelas. É pura magia patagônica em sua forma mais sofisticada!</p>
+                            </div>
+
+                            <div class="info-section skiing">
+                                <h3>⛷️ Esqui Noturno - Aventura Surreal</h3>
+                                <p>Como dançar com a lua na neve, o esqui noturno cria uma experiência única e inesquecível:</p>
+                                
+                                <div class="night-skiing">
+                                    <h4>✨ Opções de Aventura:</h4>
+                                    <div class="skiing-option">
+                                        <strong>🎿 Esqui nas Pistas Iluminadas:</strong> Ambiente surreal e único com iluminação especial para atividade noturna
+                                    </div>
+                                    <div class="skiing-option zen-option">
+                                        <strong>🚶‍♀️ Caminhadas Zen:</strong> Passeios pelos bosques nevados com bastões e pranchas - experiência contemplativa em meio à natureza adormecida
+                                    </div>
+                                    <div class="skiing-option">
+                                        <strong>🌟 Atmosfera Mágica:</strong> A neve brilhando sob as luzes artificiais cria cenários de conto de fadas
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="info-section culture">
+                                <h3>🎭 Show Cultural Exclusivo</h3>
+                                <p>Como um teatro natural em meio à floresta, a experiência cultural eleva a noite a outro patamar:</p>
+                                
+                                <div class="cultural-experience">
+                                    <h4>🎪 O Espetáculo:</h4>
+                                    <ul>
+                                        <li><strong>Grande cúpula climatizada:</strong> Ambiente aconchegante entre floresta e pistas</li>
+                                        <li><strong>Artistas locais:</strong> Música folclórica patagônica e internacional ao vivo</li>
+                                        <li><strong>Atmosfera única:</strong> Fusão perfeita entre natureza e cultura</li>
+                                        <li><strong>Experiência imersiva:</strong> Som e cenário que transportam para outro mundo</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="info-section gastronomy">
+                                <h3>🍽️ Gastronomia Premium</h3>
+                                <p>Como um banquete de reis em plena montanha, a experiência gastronômica celebra o melhor da Patagônia:</p>
+                                
+                                <div class="culinary-offerings">
+                                    <h4>🔥 Delícias da Montanha:</h4>
+                                    <div class="food-category">
+                                        <strong>🍸 Bar Artesanal:</strong> Bebidas exclusivas criadas especialmente para a noite
+                                    </div>
+                                    <div class="food-category">
+                                        <strong>🔥 Cozinha na Fogueira:</strong> Pratos regionais preparados de forma tradicional
+                                    </div>
+                                    <div class="food-category highlight-taste">
+                                        <strong>🍫 Chocolates Premium:</strong> Degustação dos melhores chocolates patagônicos
+                                    </div>
+                                    <div class="food-category">
+                                        <strong>🌟 Sabores Locais:</strong> Verdadeira celebração da gastronomia regional
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="info-section romance">
+                                <h3>💕 Perfeito para Casais</h3>
+                                <p>Como um encontro romântico sob as estrelas, a experiência é especialmente mágica para casais:</p>
+                                
+                                <div class="romantic-elements">
+                                    <ul>
+                                        <li><strong>Atmosfera íntima:</strong> Iluminação suave e cenário deslumbrante</li>
+                                        <li><strong>Experiência compartilhada:</strong> Aventuras que aproximam e criam memórias</li>
+                                        <li><strong>Ambiente exclusivo:</strong> Sensação de ter a montanha só para vocês</li>
+                                        <li><strong>Momento especial:</strong> Ideal para celebrações e declarações</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="info-section logistics">
+                                <h3>🎯 Experiência Completa Premium</h3>
+                                <p>Como um serviço de concierge de luxo, todos os detalhes estão cuidadosamente planejados:</p>
+                                
+                                <div class="complete-service">
+                                    <h4>📦 Tudo Incluído:</h4>
+                                    <ul>
+                                        <li><strong>Transfer completo:</strong> Ida e volta com conforto</li>
+                                        <li><strong>Equipamentos fornecidos:</strong> Tudo necessário para as atividades</li>
+                                        <li><strong>Ambiente aquecido:</strong> Refúgio climatizado para descanso</li>
+                                        <li><strong>Experiência sem preocupações:</strong> Foco total na diversão e romance</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="info-section perfect-for">
+                                <h3>👥 Ideal Para Quem?</h3>
+                                <p>Como uma experiência sob medida, o Winter Park Noturno atende a perfis específicos que buscam algo especial:</p>
+                                
+                                <div class="target-audience">
+                                    <div class="audience-group couples">
+                                        <h4>💑 Casais Românticos:</h4>
+                                        <ul>
+                                            <li>Buscam experiências únicas e memoráveis</li>
+                                            <li>Apreciam ambiente intimista e exclusivo</li>
+                                            <li>Querem combinar aventura com romance</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="audience-group groups">
+                                        <h4>👨‍👩‍👧‍👦 Grupos Especiais:</h4>
+                                        <ul>
+                                            <li>Celebrações importantes (aniversários, comemorações)</li>
+                                            <li>Grupos que valorizam experiências diferenciadas</li>
+                                            <li>Amigos que buscam algo além do comum</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="info-section highlight">
+                                <h3>✨ Uma Noite Transformadora</h3>
+                                <p>Como poucos lugares conseguem oferecer, o Winter Park Noturno combina <strong>adrenalina, cultura e conforto</strong> em uma experiência que transcende o turismo comum. É uma noite que marca para sempre - onde a magia da neve iluminada se encontra com a música folclórica, onde a aventura se mistura com o romance, e onde cada momento se torna uma lembrança preciosa. É a Patagônia em sua forma mais sofisticada e encantadora!</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="onde-comprar-content">
+                        <div class="onde-comprar-lista">
+                            <a href="https://easytravelshop.com.br/winter-park-noite-3247" target="_blank">Easy Travel Shop</a>
+                            <div class="onde-comprar-fisico"><b>Winter Park Ticket Office:</b> Av. de los Pioneros Km 1</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- WINTER PARK À NOITE -->
+
+            </div>
+        </div>
+
+        <!-- DIA 4 -->
+        <div class="day-section">
+            <div class="day-header">📅 Dia 4 - Cerro Catedral</div>
+            <div class="activities-grid">
+
+                <!-- CERRO CATEDRAL -->
+                <div class="activity-card" data-type="snow">
+                    <div class="activity-type type-adventure">Neve</div>
+                    <div class="activity-header">
+                        <div>
+                            <div class="activity-title">Cerro Catedral</div>
+                            <div class="activity-time">Manhã e Tarde (se tiver aula de snow)</div>
+                        </div>
+                    </div>
+                    <div class="price-tag price-expensive">A partir de $120</div>
+                    <div class="activity-description">
+                        Principal estação de esqui da América do Sul! Para iniciantes e avançados, com aulas, aluguel de equipamento e muita neve.
+                    </div>
+                    <div class="activity-details">
+                        <div class="detail-item">
+                            <div class="detail-icon"></div>
+                            <span>Transporte: Ônibus linha 55 (1h do centro)</span>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-icon"></div>
+                            <span>Horário: seg - sáb de 09:00 às 16:00h</span>
+                        </div>
+                        <span class="divisor"></span>
+                        <div class="detail-item selectable-detail">
+                            <input type="checkbox" class="detail-checkbox" data-value="72" data-moeda="usd" id="cat-preco-snow">
+                            <label for="cat-preco-snow"><span class="atracao">Aula de sky ou snow no Cerro Catedral (com equipamento)</span>: <span class="preco">$72 USD</span></label>
+                        </div>
+                        <div class="detail-item selectable-detail">
+                            <input type="checkbox" class="detail-checkbox" data-value="28" data-moeda="usd" id="cat-ent-tarde">
+                            <label for="cat-ent-tarde"><span class="atracao">Entrada no Cerro Catedral (visita e teleférico)</span>: <span class="preco">$28 USD</span></label>
+                        </div>
+                        <div class="detail-item selectable-detail">
+                            <input type="checkbox" class="detail-checkbox" data-value="90" data-moeda="usd" id="cat-ent-integ">
+                            <label for="cat-ent-integ"><span class="atracao">Entrada no Cerro Catedral (esquiar)</span>: <span class="preco">$90 USD</span></label>
+                        </div>
+                     
+                    </div>
+                    <div class="acoes-passeio">
+                        <span class="acao-link saiba-mais" onclick="toggleSaibaMais(this)">📖 Saiba Mais ▼</span>
+                        <span class="acao-link onde-comprar-link" onclick="toggleDropdown(this)">💳 Onde Comprar ▼</span>
+                    </div>
+                    <div class="saiba-mais-content">
+                        <div class="saiba-mais-text">
+                            <div class="info-section">
+                                <h3>🚌 Como Chegar</h3>
+                                <p>A forma mais econômica é o ônibus linha 55, que parte da rodoviária de Bariloche e passa pelo centro. O trajeto dura aproximadamente 1 hora. Durante o inverno, conseguir assento no centro (Calle Moreno) é como tentar uma vaga em estacionamento de shopping no Natal - praticamente impossível!</p>
+                            </div>
+
+                            <div class="info-section">
+                                <h3>⛷️ Características da Estação</h3>
+                                <p>Principal estação de esqui de Bariloche com <strong>nível de dificuldade maior</strong>. Oferece atividades na neve para não-esquiadores e possui diversas lojas de equipamentos esportivos. <em>Dica importante:</em> prefira alugar roupas e calçados para neve no centro de Bariloche antes de subir.</p>
+                            </div>
+
+                            <div class="info-section">
+                                <h3>🎫 Ingressos e Acesso</h3>
+                                <ul>
+                                    <li><strong>Passes de esqui:</strong> vendidos na hora, na bilheteria</li>
+                                    <li><strong>Pedestres:</strong> entrada gratuita (pagam apenas atividades específicas ou teleféricos)</li>
+                                    <li><strong>Tickets avulsos:</strong> necessários para usar meios de elevação sem passe de esqui</li>
+                                </ul>
+                            </div>
+
+                            <div class="info-section">
+                                <h3>🚠 Teleféricos para Não-Esquiadores</h3>
+                                <p>Três opções permitem embarque de pedestres:</p>
+                                <ul>
+                                    <li><strong>Cable Carril (bondinho):</strong> vista excelente</li>
+                                    <li><strong>Telecabina Amancay:</strong> cabine fechada</li>
+                                    <li><strong>Telesillas Princesa:</strong> sequência de três teleféricos de cadeirinha</li>
+                                </ul>
+                            </div>
+
+                            <div class="info-section">
+                                <h3>🍽️ Infraestrutura no Topo</h3>
+                                <p>Como um food court de montanha, há duas lanchonetes principais no Cable Carril para se abrigar do frio, além de outros restaurantes espalhados pela estação com vista privilegiada das manobras dos esquiadores.</p>
+                            </div>
+
+                            <div class="info-section highlight">
+                                <h3>⚠️ Atenção Importantes</h3>
+                                <ul>
+                                    <li><strong>Cadeirinha Lynch:</strong> vai ainda mais alto, mas não é segura para não-esquiadores</li>
+                                    <li><strong>Atividades extras:</strong> verifique disponibilidade no dia da visita (raquetes, tubing, bicicletas de neve)</li>
+                                    <li><strong>Planejamento:</strong> confirme ponto de partida das atividades para comprar o ticket de elevação correto</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="onde-comprar-content">
+                        <div class="onde-comprar-lista">
+                            <a href="https://catedralaltapatagonia.com/tarifas/#" target="_blank">Catedral (Oficial)</a>
+                            <a href="https://escuelaxtreme.com/tarifas-adultos/" target="_blank">Aula snowboard - Escuela Xtreme</a>
+                            <a href="https://www.zigzagtravel.com.ar/pb/catalogo/san_carlos_de_bariloche-245/snowboard_para_iniciantes_-_cerro_catedral-130.html" target="_blank">Aula snowboard - ZigZag</a>
+                            
+                        </div>
+                    </div>
+                </div>
+                <!-- CERRO CATEDRAL -->
+
+                <!-- MUSEU PALEONTOLÓGICO -->
+                <div class="activity-card" data-type="culture" style="transform: translateY(0px) scale(1);">
+                    <div class="activity-type type-culture">Cultura</div>
+                    <div class="activity-header">
+                        <div>
+                            <div class="activity-title">Museu Paleontológico</div>
+                            <div class="activity-time">Tarde</div>
+                        </div>
+                    </div>
+                    <div class="price-tag price-free">Gratuito</div>
+                    <div class="activity-description">
+                        Descoberta científica da região. Ideal para conhecer a história natural da Patagônia.
+                    </div>
+
+                    <div class="activity-details">
+                        <div class="detail-item">
+                            <div class="detail-icon"></div>
+                            <span>Segunda a sábado (13:00h às 17:30h)</span>
+                        </div>
+                        
+                     
+                    </div>
+
+
+                    <div class="acoes-passeio">
+                        <span class="acao-link saiba-mais" onclick="toggleSaibaMais(this)">📖 Saiba Mais ▼</span>
+                        <span class="acao-link onde-comprar-link" onclick="toggleDropdown(this)">💳 Onde Comprar ▼</span>
+                    </div>
+                    <div class="saiba-mais-content">
+                        <div class="saiba-mais-text">
+                            <div class="info-section intro">
+                                <h3>🦴 Uma Viagem de 300 Milhões de Anos</h3>
+                                <p>Como um <strong>laboratório do tempo</strong>, o Museu Paleontológico é uma pequena joia cultural que revela os segredos da evolução na Patagônia. Criado pela Associação Paleontológica Bariloche em 1977, é uma máquina do tempo que transporta você através das eras geológicas!</p>
+                            </div>
+
+                            <div class="info-section collection">
+                                <h3>🦕 Acervo Espetacular</h3>
+                                <p>Como tesouros de uma biblioteca de pedra, cada peça conta uma história fascinante da vida pré-histórica:</p>
+                                
+                                <div class="fossil-highlights">
+                                    <h4>💎 Destaques da Coleção:</h4>
+                                    <div class="fossil-item ancient">
+                                        <strong>🐋 Ictiossauro Completo:</strong> Do Monte Lotena (150 milhões de anos) - um réptil marinho gigante da era dos dinossauros
+                                    </div>
+                                    <div class="fossil-item">
+                                        <strong>🦈 Mandíbula de Tubarão:</strong> Reconstrução do Terciário (22 milhões de anos) - quando os oceanos dominavam
+                                    </div>
+                                    <div class="fossil-item famous">
+                                        <strong>🐦 Archaeopteryx:</strong> A famosa ligação evolutiva entre répteis e aves - do tamanho de um corvo, mas que mudou a história!
+                                    </div>
+                                    <div class="fossil-item">
+                                        <strong>🏔️ Fósseis Patagônicos:</strong> Descobertas locais que revelam a transformação da paisagem regional
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="info-section technology">
+                                <h3>📱 Tecnologia Moderna</h3>
+                                <p>Como um museu do século XXI, a renovação de 2022 trouxe inovações que revolucionaram a experiência:</p>
+                                
+                                <div class="tech-features">
+                                    <h4>🚀 Inovações Tecnológicas:</h4>
+                                    <ul>
+                                        <li><strong>QR Codes:</strong> Acesso instantâneo a informações detalhadas sobre cada peça</li>
+                                        <li><strong>Realidade Aumentada:</strong> Veja os fósseis "ganharem vida" através da tecnologia</li>
+                                        <li><strong>Vídeos em Libras:</strong> Acessibilidade completa com linguagem de sinais</li>
+                                        <li><strong>Exposição Dinâmica:</strong> Explicação interativa da transformação patagônica</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="info-section education">
+                                <h3>👨‍🏫 Educação Interativa</h3>
+                                <p>Como uma escola da natureza, o museu vai além da contemplação, oferecendo aprendizado ativo:</p>
+                                
+                                <div class="educational-programs">
+                                    <h4>📚 Programas Educativos:</h4>
+                                    <div class="program-item">
+                                        <strong>🎤 Palestras Educativas:</strong> Apresentações sobre descobertas e evolução
+                                    </div>
+                                    <div class="program-item highlight-program">
+                                        <strong>👥 Visitas Guiadas:</strong> Todos os sábados às 17h com especialistas
+                                    </div>
+                                    <div class="program-item">
+                                        <strong>👨‍👩‍👧‍👦 Experiência Familiar:</strong> Perfeito para despertar o interesse científico das crianças
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="info-section journey">
+                                <h3>⏳ Jornada Através do Tempo</h3>
+                                <p>Como viajantes do tempo, você percorrerá marcos evolutivos fundamentais:</p>
+                                
+                                <div class="timeline-journey">
+                                    <div class="time-period mesozoic">
+                                        <strong>150 milhões de anos:</strong> Era Mesozoica - Répteis marinhos gigantes dominam os oceanos
+                                    </div>
+                                    <div class="time-period cenozoic">
+                                        <strong>22 milhões de anos:</strong> Era Cenozoica - Tubarões modernos evoluem nos mares
+                                    </div>
+                                    <div class="time-period evolution">
+                                        <strong>Evolução das Aves:</strong> Archaeopteryx marca a transição histórica réptil-ave
+                                    </div>
+                                    <div class="time-period present">
+                                        <strong>Presente:</strong> Compreendemos nossa origem através destes testemunhos pétreos
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="info-section practical">
+                                <h3>📍 Informações Práticas</h3>
+                                <p>Como um presente da ciência para todos, o museu oferece acesso gratuito ao conhecimento:</p>
+                                
+                                <div class="visit-details">
+                                    <h4>🏛️ Detalhes da Visita:</h4>
+                                    <ul>
+                                        <li><strong>Localização:</strong> Av. 12 de Outubro c/ Sarmiento (costaneira)</li>
+                                        <li><strong>Funcionamento:</strong> Segunda a sábado, 15h às 19h</li>
+                                        <li><strong>Entrada:</strong> Gratuita - conhecimento acessível a todos!</li>
+                                        <li><strong>Visitas especiais:</strong> Sábados às 17h com guia especializado</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="info-section perfect-for">
+                                <h3>🎯 Ideal Para Quem?</h3>
+                                <p>Como uma experiência educativa universal, o museu atende a diversos perfis de visitantes:</p>
+                                
+                                <div class="target-audience">
+                                    <ul>
+                                        <li><strong>Famílias com crianças:</strong> Despertar a curiosidade científica desde cedo</li>
+                                        <li><strong>Estudantes:</strong> Complementar conhecimentos de biologia e geologia</li>
+                                        <li><strong>Amantes da ciência:</strong> Aprofundar conhecimento sobre evolução</li>
+                                        <li><strong>Turistas curiosos:</strong> Descobrir a história natural da Patagônia</li>
+                                        <li><strong>Pessoas com deficiência auditiva:</strong> Conteúdo acessível em Libras</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="info-section highlight">
+                                <h3>✨ Um Tesouro Cultural Acessível</h3>
+                                <p>Como uma janela para o passado remoto, o Museu Paleontológico oferece <strong>uma experiência educativa única e gratuita</strong> que conecta o presente com 300 milhões de anos de história. É um local onde a ciência se torna acessível, onde crianças descobrem a magia da evolução, e onde adultos se maravilham com os mistérios da Terra primitiva. Mais que um museu, é um convite para compreender nossa origem e nosso lugar na grande história da vida no planeta!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="onde-comprar-content">
+                        <div class="onde-comprar-lista">
+                            <a href="https://www.facebook.com/museopalentologico/" target="_blank">Informações sobre o museu</a>
+                            
+                        </div>
+                    </div>
+                </div>
+                <!-- MUSEU PALEONTOLÓGICO -->
+
+                <!-- MUSEU DA PATAGÔNIA -->
+                <div class="activity-card" data-type="culture" style="transform: translateY(0px) scale(1);">
+                    <div class="activity-type type-culture">Cultura</div>
+                    <div class="activity-header">
+                        <div>
+                            <div class="activity-title">Museu da Patagônia</div>
+                            <div class="activity-time">Tarde</div>
+                        </div>
+                    </div>
+                    <div class="price-tag">$2</div>
+                    <div class="activity-description">
+                        História e cultura regional por um preço simbólico. Perfeito para conhecer a identidade patagônica.
+                    </div>
+
+                    <div class="activity-details">
+                        <div class="detail-item selectable-detail">
+                            <input type="checkbox" class="detail-checkbox" data-value="2" data-moeda="usd" id="patag-pass">
+                            <label for="patag-pass"><span class="atracao">Entrada no Museu da Patagônia</span>: <span class="preco">$2 USD</span></label>
+                        </div>
+                                             
+                    </div>
+
+                    <div class="acoes-passeio">
+                        <span class="acao-link saiba-mais" onclick="toggleSaibaMais(this)">📖 Saiba Mais ▼</span>
+                        <span class="acao-link onde-comprar-link" onclick="toggleDropdown(this)">💳 Onde Comprar ▼</span>
+                    </div>
+                    <div class="saiba-mais-content">
+                        <div class="saiba-mais-text">
+                            <div class="info-section intro">
+                                <h3>🏛️ O Coração Cultural de Bariloche</h3>
+                                <p>Como um <strong>baú de memórias da Patagônia</strong>, o Museu da Patagônia guarda a alma desta região única, instalado no icônico prédio do Centro Cívico, declarado <strong>Monumento Histórico Nacional</strong>. É o ponto de partida perfeito para compreender a identidade patagônica!</p>
+                            </div>
+
+                            <div class="info-section">
+                                <h3>📚 História Fundacional</h3>
+                                <p>Como uma <strong>testemunha viva</strong> da evolução regional, o museu foi inaugurado em <strong>1940</strong> pela Administração de Parques Nacionais. Sua primeira coleção antropológica foi adquirida de Enrique Amadeo Artayeta, marcando o início da preservação da memória patagônica.</p>
+                                
+                                <div class="historical-context">
+                                    <h4>🎯 Foco Temático:</h4>
+                                    <ul>
+                                        <li><strong>Colonização europeia</strong> na Patagônia</li>
+                                        <li><strong>Cultura indígena patagônica</strong> ancestral</li>
+                                        <li><strong>Evolução urbana</strong> de Bariloche</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="info-section highlight">
+                                <h3>🏺 Acervo Etnográfico Rico</h3>
+                                <p>Como um livro de história vivo, o museu apresenta uma coleção vasta que conta a narrativa completa da região:</p>
+                                
+                                <div class="collection-details">
+                                    <h4>🌍 Principais Coleções:</h4>
+                                    <ul>
+                                        <li><strong>Primeiros colonos suíços e franceses</strong> (início séc. XX)</li>
+                                        <li><strong>Artefatos dos povos originários</strong> patagônicos</li>
+                                        <li><strong>História dos Parques Nacionais</strong> argentinos</li>
+                                        <li><strong>Evolução urbana de Bariloche</strong> através dos tempos</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="info-section cultural">
+                                <h3>🎭 Experiência Cultural Completa</h3>
+                                <p>Como um arqueólogo cultural, você descobrirá como os imigrantes europeus moldaram a identidade única de Bariloche:</p>
+                                
+                                <div class="cultural-impact">
+                                    <h4>🏗️ Influências Européias:</h4>
+                                    <ul>
+                                        <li><strong>Arquitetura alpina</strong> característica da cidade</li>
+                                        <li><strong>Gastronomia</strong> com tradições suíças e alemãs</li>
+                                        <li><strong>Tradições locais</strong> mescladas com costumes europeus</li>
+                                        <li><strong>"DNA" cultural</strong> único da Patagônia Argentina</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="info-section practical">
+                                <h3>🕒 Informações Práticas</h3>
+                                <p>Localizado estrategicamente no <strong>Centro Cívico</strong>, é uma parada obrigatória para qualquer visitante que deseje compreender a essência de Bariloche:</p>
+                                
+                                <div class="visit-info">
+                                    <h4>📍 Detalhes da Visita:</h4>
+                                    <ul>
+                                        <li><strong>Localização:</strong> Centro Cívico (coração de Bariloche)</li>
+                                        <li><strong>Terça a Sexta:</strong> 10h-12h30 e 14h-19h</li>
+                                        <li><strong>Sábado:</strong> 10h-17h</li>
+                                        <li><strong>Valor:</strong> Simbólico (acessível a todos)</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="info-section summary">
+                                <h3>⭐ Por Que Visitar</h3>
+                                <p>Como uma máquina do tempo cultural, o Museu da Patagônia oferece a chave para decifrar os códigos culturais de Bariloche. É o local onde passado e presente se encontram, revelando como esta região única da Argentina se tornou o que é hoje - uma mistura harmoniosa entre tradições indígenas, influências europeias e a grandiosidade natural patagônica.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="onde-comprar-content">
+                        <div class="onde-comprar-lista">
+                            Compra de bilhete no próprio museu
+                            
+                        </div>
+                    </div>
+                </div>
+                <!-- MUSEU DA PATAGÔNIA -->
+
+
+            </div>
+        </div>
+
+
+        <!-- DIA 5 -->
+        <div class="day-section">
+            <div class="day-header">📅 Dia 5 - Experiência Patagônica</div>
+            <div class="activities-grid">
+                
+                <!-- CAVALGADA -->
+                <div class="activity-card" data-type="nature">
+                    <div class="activity-type type-nature">Natureza</div>
+                    <div class="activity-header">
+                        <div>
+                            <div class="activity-title">Cavalgada e Churrasco Patagônico</div>
+                            <div class="activity-time">Manhã e Tarde</div>
+                        </div>
+                    </div>
+                    <div class="price-tag price-variable">$120 USD</div>
+                    <div class="activity-description">
+                        Passeio a cavalo por paisagens incríveis com almoço típico argentino na fazenda.
+                    </div>
+                    <div class="activity-details">
+                        
+                        <div class="detail-item">
+                            <div class="detail-icon"></div>
+                            <span>Estância San Ramón, Estepe Patagônica, Laguna Los Juncos</span>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-icon"></div>
+                            <span>Inclui: transfer, café da manhã, asado completo + bar aberto</span>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-icon"></div>
+                            <span>Observação fauna: condores, guanacos, cisnes</span>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-icon"></div>
+                            <span>Duração total: 5-6 horas</span>
+                        </div>
+                        <span class="divisor"></span>
+                        <div class="detail-item selectable-detail">
+                            <input type="checkbox" class="detail-checkbox" data-value="120" data-moeda="usd" id="cav-churrasco">
+                            <label for="cav-churrasco"><span class="atracao">Cavalgada e churrasco</span>: <span class="preco">$120 USD</span></label>
+                        </div>
+                    </div>
+
+
+                    <div class="acoes-passeio">
+                        <span class="acao-link saiba-mais" onclick="toggleSaibaMais(this)">📖 Saiba Mais ▼</span>
+                        <span class="acao-link onde-comprar-link" onclick="toggleDropdown(this)">💳 Onde Comprar ▼</span>
+                    </div>
+                    <div class="saiba-mais-content">
+                        <div class="saiba-mais-text">
+                            <div class="info-section">
+                                <h3>🕘 Cronograma do Passeio</h3>
+                                <div class="timeline">
+                                    <div class="timeline-item">
+                                        <strong>09h30</strong> - Saída do ponto de encontro em direção à Estância San Ramón (Rota 23)
+                                    </div>
+                                    <div class="timeline-item">
+                                        <strong>10h00</strong> - Chegada ao La Fragua Post e café da manhã de boas-vindas
+                                    </div>
+                                    <div class="timeline-item">
+                                        <strong>10h30</strong> - Briefing de segurança e instruções sobre cavalgada
+                                    </div>
+                                    <div class="timeline-item">
+                                        <strong>11h00</strong> - Início da cavalgada de 2 horas pela floresta patagônica
+                                    </div>
+                                    <div class="timeline-item">
+                                        <strong>13h00</strong> - Retorno ao rancho para almoço com assado argentino
+                                    </div>
+                                    <div class="timeline-item">
+                                        <strong>15h00</strong> - Descanso e retorno a Bariloche
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="info-section">
+                                <h3>🐎 Experiência de Cavalgada</h3>
+                                <p>Como os antigos gaúchos da Patagônia, você percorrerá <strong>2 horas</strong> pela floresta de transição e estepe patagônica. A experiência inclui briefing completo de segurança com guia especializado - similar ao que fazem nas escolas de equitação profissionais.</p>
+                                
+                                <div class="wildlife-section">
+                                    <h4>🦅 Fauna Observable:</h4>
+                                    <ul>
+                                        <li>Condores majestosos voando sobre as montanhas</li>
+                                        <li>Guanacos (parentes selvagens das lhamas)</li>
+                                        <li>Choiques (avestruzes patagônicos)</li>
+                                        <li>Veados nativos da região</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="info-section">
+                                <h3>☕ Café da Manhã de Boas-Vindas</h3>
+                                <p>Recepção calorosa no La Fragua Post com café da manhã tradicional argentino, incluindo bolos fritos e doces caseiros - como uma manhã na casa da vovó no campo!</p>
+                            </div>
+
+                            <div class="info-section">
+                                <h3>🥩 Almoço Campeiro Completo</h3>
+                                <p>Depois da cavalgada, como verdadeiros gaúchos, você será recebido com um autêntico assado argentino no rancho:</p>
+                                
+                                <div class="menu-section">
+                                    <h4>🍽️ Prato Principal:</h4>
+                                    <ul>
+                                        <li>Assado argentino tradicional</li>
+                                        <li>Saladas frescas</li>
+                                        <li>Pão artesanal</li>
+                                    </ul>
+                                </div>
+
+                                <div class="menu-section">
+                                    <h4>🍰 Sobremesa:</h4>
+                                    <ul>
+                                        <li>Panquecas com doce de leite (especialidade argentina)</li>
+                                    </ul>
+                                </div>
+
+                                <div class="menu-section">
+                                    <h4>🥤 Bebidas Ilimitadas:</h4>
+                                    <ul>
+                                        <li>Vinho de mesa argentino</li>
+                                        <li>Refrigerantes variados</li>
+                                        <li>Água com e sem gás</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="info-section highlight">
+                                <h3>🌟 Experiência Autêntica</h3>
+                                <p>Este passeio oferece uma imersão completa na cultura gaúcha patagônica: desde a cavalgada pelos cenários naturais únicos até o almoço tradicional no rancho, com tempo para contemplar a paisagem e relaxar antes do retorno à cidade.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="onde-comprar-content">
+                        <div class="onde-comprar-lista">
+                            <a href="https://www.zigzagtravel.com.ar/pb/catalogo/san_carlos_de_bariloche-245/cavalgada_-_la_fragua-126.html#/availability/search/2025/6/25" target="_blank">ZigZag</a>
+                            <a href="https://braziloche.com.br/cavalgada-com-traslado" target="_blank">Braziloche</a>
+                            
+                        </div>
+                    </div>
+                </div>
+                <!-- CAVALGADA -->
+
+               
+
+                <!-- REFUGIO ARELAUQUEN -->
+                <div class="activity-card" data-type="gastronomy" style="transform: translateY(0px) scale(1);">
+                    <div class="activity-type type-gastronomy">Premium</div>
+                    <div class="activity-header">
+                        <div>
+                            <div class="activity-title">El Refugio Arelauquen</div>
+                            <div class="activity-time">Noite</div>
+                        </div>
+                    </div>
+                    <div class="price-tag price-expensive">$290</div>
+                    <div class="activity-description">
+                        Experiência premium: moto de neve + jantar gourmet no refúgio de montanha.
+                    </div>
+                    <div class="activity-details">
+                        <div class="detail-item">
+                            <div class="detail-icon"></div>
+                            <span>Duração: 3,5h</span>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-icon"></div>
+                            <span>Inclui: transfer, moto de neve, fondue completo</span>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-icon"></div>
+                            <span>Primeiro Turno Almoço - Transfer 10:30 horas</span>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-icon"></div>
+                            <span>Segundo Turno Almoço - Transfer 11:45 horas</span>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-icon"></div>
+                            <span>Primeiro Turno Jantar - Transfer 16:30 horas</span>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-icon"></div>
+                            <span>Segundo Turno Jantar - Transfer 17:30 horas</span>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-icon"></div>
+                            <span>Terceiro Turno Jantar - Transfer 19:15 horas</span>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-icon"></div>
+                            <span>Quarto Turno Jantar - Transfer 20:15 horas</span>
+                        </div>
+                        <span class="divisor"></span>
+                        <div class="detail-item selectable-detail">
+                            <input type="checkbox" class="detail-checkbox" data-value="290" data-moeda="usd" id="arel-pass">
+                            <label for="arel-pass"><span class="atracao">Refugio Arelauquen</span>: <span class="preco">$290 USD</span></label>
+                        </div>
+                    </div>
+
+                    <div class="acoes-passeio">
+                        <span class="acao-link saiba-mais" onclick="toggleSaibaMais(this)">📖 Saiba Mais ▼</span>
+                        <span class="acao-link onde-comprar-link" onclick="toggleDropdown(this)">💳 Onde Comprar ▼</span>
+                    </div>
+
+
+                    <div class="saiba-mais-content">
+                        <div class="saiba-mais-text">
+                            <div class="info-section">
+                        <h3>🚐 Transfer e Ponto de Partida</h3>
+                        <p>Transfer completo de ida e volta desde pontos de encontro no centro de Bariloche até o km 25 da Avenida Bustillo (região do Hotel Llao Llao). Como um serviço de turismo premium, inclui recepção com brinde de boas-vindas no club house do golf.</p>
+                    </div>
+
+                    <div class="info-section">
+                        <h3>🏔️ Aventura 4x4 + Motos de Neve</h3>
+                        <p>A experiência começa com uma subida emocionante em veículos Land Rover 4x4 até o setor das motos de neve - como uma expedição de safári, mas na montanha! Em seguida, passeio de moto de neve até o cume onde fica El Refugio.</p>
+                        
+                        <div class="activity-details">
+                            <h4>Detalhes do Passeio:</h4>
+                            <ul>
+                                <li><strong>Duração:</strong> 15 minutos cada trecho (ida e volta)</li>
+                                <li><strong>Ocupação:</strong> duas pessoas por moto</li>
+                                <li><strong>Condução:</strong> oportunidade de dirigir para maiores de 18 anos</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="info-section">
+                        <h3>🍽️ Experiência Gastronômica no El Refugio</h3>
+                        <p>Como um restaurante alpino autêntico, oferece uma experiência gastronômica completa com vista panorâmica da montanha:</p>
+                        
+                        <div class="menu-section">
+                            <h4>🥄 Pratos Principais:</h4>
+                            <ul>
+                                <li>Sopa do dia</li>
+                                <li>Fondue de queijo com guarnições</li>
+                                <li>Fondue de chocolate com guarnições</li>
+                            </ul>
+                        </div>
+
+                        <div class="menu-section">
+                            <h4>🥂 Bebidas Incluídas:</h4>
+                            <ul>
+                                <li><strong>Com álcool:</strong> espumante, cervejas, vinhos Terrazas de los Andes</li>
+                                <li><strong>Sem álcool:</strong> refrigerantes, sucos e água</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="info-section highlight">
+                        <h3>✨ Experiência Completa</h3>
+                        <p>Este passeio combina aventura e gastronomia em um pacote completo: desde o transporte confortável, passpela adrenalina do 4x4 e motos de neve, até o jantar especial em altitude com vista espetacular das montanhas.</p>
+                    </div>
+                                            </div>
+                    </div>
+                    <div class="onde-comprar-content">
+                        <div class="onde-comprar-lista">
+                            <a href="https://elrefugioarelauquen.com.ar/pt/" target="_blank">El Refugio</a>
+                            <a href="https://www.zigzagtravel.com.ar/pb/catalogo/san_carlos_de_bariloche-245/el_refugio-49.html#/availability/search/2025/7/18" target="_blank">ZigZag</a>
+                                                        
+                        </div>
+                    </div>
+                </div>
+                <!-- REFUGIO ARELAUQUEN -->
+
+            </div>
+        </div>
+
+
+
+        <!-- DIA 6 -->
+        <div class="day-section">
+            <div class="day-header">📅 Dia 6 - Cruzeiro e montanhas</div>
+            <div class="activities-grid">
+
+                <!-- PUERT BLEST -->
+                <div class="activity-card" data-type="nature" style="transform: translateY(0px) scale(1);">
+                    <div class="activity-type type-nature">Natureza</div>
+                    <div class="activity-header">
+                        <div>
+                            <div class="activity-title">Navegação Puerto Blest & Lago Frías</div>
+                            <div class="activity-time">Dia todo</div>
+                        </div>
+                    </div>
+                    <div class="price-tag">$139 USD</div>
+                    <div class="activity-description">
+                        Navegação épica até Puerto Blest + Lago Frías. Cachoeira dos Cântaros e floresta valdiviana com larício milenar.
+                    </div>
+                    <div class="activity-details">
+                        <div class="detail-item">
+                            <div class="detail-icon"></div>
+                            <span>⚠️ Escolha o dia mais ensolarado da viagem</span>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-icon"></div>
+                            <span>Duração: 9h (com transfer)</span>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-icon"></div>
+                            <span>Saída: Puerto Pañuelo (Península Llao Llao)</span>
+                        </div>
+
+                        <span class="divisor"></span>
+                        <div class="detail-item selectable-detail">
+                            <input type="checkbox" class="detail-checkbox" data-value="139" data-moeda="usd" id="puerto_blest">
+                            <label for="puerto_blest"><span class="atracao">Puerto Blest c/ transfer</span>: <span class="preco">$139 USD</span></label>
+                        </div>
+
+                    </div>
+                    <div class="acoes-passeio">
+                        <span class="acao-link saiba-mais" onclick="toggleSaibaMais(this)">📖 Saiba Mais ▼</span>
+                        <span class="acao-link onde-comprar-link" onclick="toggleDropdown(this)">💳 Onde Comprar ▼</span>
+                    </div>
+                    <div class="saiba-mais-content">
+                        <div class="saiba-mais-text">
+                            <div class="info-section intro">
+                                <h3>💎 A Joia da Coroa dos Passeios Lacustres</h3>
+                                <p>Como uma <strong>expedição a um mundo perdido</strong>, este passeio de dia inteiro combina navegação, trekking e descobertas naturais únicas. Uma jornada épica que revela os segredos mais bem guardados do Lago Nahuel Huapi!</p>
+                            </div>
+
+                            <div class="info-section navigation">
+                                <h3>⛵ Navegação Panorâmica</h3>
+                                <p>Como exploradores marítimos, você iniciará a aventura saindo do Puerto Pañuelo em uma navegação de <strong>90 minutos</strong> pelo braço Blest do Lago Nahuel Huapi, acompanhado por gaivotas curiosas que seguem a embarcação como guias naturais.</p>
+                                
+                                <div class="navigation-details">
+                                    <h4>🌊 Detalhes da Navegação:</h4>
+                                    <ul>
+                                        <li><strong>Ponto de partida:</strong> Puerto Pañuelo</li>
+                                        <li><strong>Duração:</strong> 90 minutos pelo braço Blest</li>
+                                        <li><strong>Companhia:</strong> Gaivotas curiosas e vida aquática</li>
+                                        <li><strong>Paisagem:</strong> Vistas panorâmicas dos Andes patagônicos</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="info-section historical">
+                                <h3>🏛️ Ilha Centinela - Momento Histórico</h3>
+                                <p>Como um altar natural à preservação, a primeira parada emocional leva você ao local onde descansam os restos do <strong>Perito Francisco Moreno</strong>, conhecido como o "pai dos Parques Nacionais argentinos". Um momento sagrado de reflexão sobre a importância da conservação desta natureza única.</p>
+                            </div>
+
+                            <div class="info-section trekking">
+                                <h3>🥾 Cascada de los Cântaros - Aventura Épica</h3>
+                                <p>Como alpinistas em busca do tesouro perdido, prepare as pernas para a aventura mais rewarding do passeio:</p>
+                                
+                                <div class="trekking-details">
+                                    <h4>⛰️ O Desafio:</h4>
+                                    <div class="challenge-item">
+                                        <strong>734 degraus</strong> através da exuberante Floresta Valdiviana
+                                    </div>
+                                    <div class="challenge-item highlight-challenge">
+                                        <strong>Destino:</strong> Lago dos Cântaros com larício de 1.500 anos
+                                    </div>
+                                    <div class="challenge-item">
+                                        <strong>Recompensa:</strong> Uma das vistas mais impactantes da Patagônia
+                                    </div>
+                                    <div class="challenge-item">
+                                        <strong>Guardião milenar:</strong> Árvore que guarda segredos de 15 séculos
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="info-section destination">
+                                <h3>🏔️ Puerto Blest - Cenário de Sonho</h3>
+                                <p>Como um quadro impressionista da natureza, Puerto Blest oferece o cenário mais deslumbrante da jornada:</p>
+                                
+                                <div class="destination-features">
+                                    <h4>💚 Atrações Principais:</h4>
+                                    <ul>
+                                        <li><strong>Águas verde-esmeralda</strong> do Lago Frías</li>
+                                        <li><strong>Origem glacial:</strong> Degelo do majestoso Cerro Tronador</li>
+                                        <li><strong>Hotel aconchegante:</strong> Refúgio com gastronomia local</li>
+                                        <li><strong>Opcional:</strong> Passeio ao Lago Frías (+$20)</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="info-section biodiversity">
+                                <h3>🌿 Floresta Valdiviana</h3>
+                                <p>Como uma biblioteca viva da biodiversidade, a Floresta Valdiviana oferece um ecossistema único:</p>
+                                
+                                <div class="forest-info">
+                                    <ul>
+                                        <li><strong>Ecossistema raro:</strong> Floresta temperada húmida</li>
+                                        <li><strong>Biodiversidade única:</strong> Espécies endêmicas centenárias</li>
+                                        <li><strong>Microclima especial:</strong> Umidade e temperatura ideais</li>
+                                        <li><strong>Patrimônio natural:</strong> Preservado há gerações</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="info-section tip">
+                                <h3>☀️ Dica Essencial de Ouro</h3>
+                                <p>Como fotógrafos profissionais sabem, <strong>reserve para o dia mais ensolarado</strong> da sua viagem! O sol realça as cores vibrantes da água, transformando o verde-esmeralda em um espetáculo visual inesquecível. É a diferença entre uma foto bonita e uma obra de arte!</p>
+                            </div>
+
+                            <div class="info-section highlight">
+                                <h3>✨ Experiência Completa Transformadora</h3>
+                                <p>Como poucos lugares no planeta conseguem oferecer, este passeio combina <strong>história, aventura física, contemplação espiritual e beleza natural</strong> em uma experiência que marca profundamente. É uma jornada através do tempo e da natureza que conecta você com a essência mais pura da Patagônia - desde as águas cristalinas até as árvores milenares que testemunharam séculos de história!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="onde-comprar-content">
+                        <div class="onde-comprar-lista">
+                            <a href="https://www.zigzagtravel.com.ar/pb/catalogo/san_carlos_de_bariloche-245/porto_blest-10.html#/availability/search/2025/7/13" target="_blank">ZigZag</a>
+                            
+                        </div>
+                    </div>
+                </div>
+                <!-- PUERTO BLEST -->
+
+
+                <!-- LA CUEVA -->
+                <div class="activity-card" data-type="gastronomy" style="transform: translateY(0px) scale(1);">
+                    <div class="activity-type type-gastronomy">Premium</div>
+                    <div class="activity-header">
+                        <div>
+                            <div class="activity-title">La Cueva - Travessia diurna com moto <br>de neve</div>
+                            <div class="activity-time">Manhã</div>
+                        </div>
+                    </div>
+                    <div class="price-tag price-expensive">$80 USD</div>
+                    <div class="activity-description">
+                        Embarque em um passeio guiado de snowmobile que o levará a mirantes naturais deslumbrantes, cruzará riachos e desfrutará do encanto maravilhoso das montanhas e de seus arredores incomparáveis. Explore uma área exclusiva da estação de esqui (Cerro Catedral), acessível apenas por veículos todo-terreno. Não perca esta experiência única na natureza!
+                    </div>
+                    <div class="activity-details">
+                        
+                        <div class="detail-item">
+                            <div class="detail-icon"></div>
+                            <span>Duração: 45 min</span>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-icon"></div>
+                            <span>Pick-up hotel: 17h30 | Apresentação no Cerro Catedral: 09h30 | Início: 10h00</span>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-icon"></div>
+                            <span>Pick-up hotel: 20h30 | Apresentação no Cerro Catedral: 10h45 | Início: 11h15</span>
+                        </div>
+                        <span class="divisor"></span>
+                        <div class="detail-item selectable-detail">
+                            <input type="checkbox" class="detail-checkbox" data-value="80" data-moeda="usd" id="cueva">
+                            <label for="cueva"><span class="atracao">La Cueva (preço/veículo, 1 ou 2 no mesmo veículo)</span>: <span class="preco">$160 USD</span></label>
+                        </div>
+                    </div>
+
+
+                    <div class="acoes-passeio">
+                        <span class="acao-link saiba-mais" onclick="toggleSaibaMais(this)">📖 Saiba Mais ▼</span>
+                        <span class="acao-link onde-comprar-link" onclick="toggleDropdown(this)">💳 Onde Comprar ▼</span>
+                    </div>
+                    <div class="saiba-mais-content">
+                        <div class="saiba-mais-text">
+                            
+                            <div class="info-section intro">
+                                <h3>🏔️ Aventura Exclusiva no Cerro Catedral</h3>
+                                <p>Como uma <strong>expedição de exploradores modernos</strong>, esta travessia diurna leva você a lugares que poucos têm o privilégio de conhecer. É o acesso VIP às áreas mais exclusivas e intocadas do Cerro Catedral, onde a natureza patagônica se revela em sua forma mais pura!</p>
+                            </div>
+
+                            <div class="info-section snowmobile">
+                                <h3>🛷 Passeio Guiado de Snowmobile</h3>
+                                <p>Como pilotos de rally na neve, você navegará pelos terrenos mais espetaculares da região com total segurança e emoção:</p>
+                                
+                                <div class="snowmobile-experience">
+                                    <h4>❄️ A Aventura sobre Rodas:</h4>
+                                    <ul>
+                                        <li><strong>Guia especializado:</strong> Acompanhamento profissional durante todo o percurso</li>
+                                        <li><strong>Veículos todo-terreno:</strong> Snowmobiles preparados para qualquer desafio</li>
+                                        <li><strong>Rota exclusiva:</strong> Caminhos acessíveis apenas por veículos especiais</li>
+                                        <li><strong>Segurança total:</strong> Equipamentos e instruções completas fornecidas</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="info-section landscapes">
+                                <h3>🌄 Paisagens de Tirar o Fôlego</h3>
+                                <p>Como um documentário da National Geographic ao vivo, cada momento da travessia revela cenários únicos:</p>
+                                
+                                <div class="scenic-highlights">
+                                    <h4>📸 O que Você Verá:</h4>
+                                    <div class="landscape-item">
+                                        <strong>🏔️ Mirantes Naturais Deslumbrantes:</strong> Vistas panorâmicas que poucos olhos contemplaram
+                                    </div>
+                                    <div class="landscape-item">
+                                        <strong>🏞️ Riachos Cristalinos:</strong> Travessia por cursos d'água em meio à paisagem nevada
+                                    </div>
+                                    <div class="landscape-item highlight-view">
+                                        <strong>⛰️ Montanhas Incomparáveis:</strong> O encanto maravilhoso dos Andes patagônicos
+                                    </div>
+                                    <div class="landscape-item">
+                                        <strong>🌲 Arredores Intocados:</strong> Natureza preservada em estado selvagem
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="info-section exclusive">
+                                <h3>🔒 Área Exclusiva do Cerro Catedral</h3>
+                                <p>Como ter acesso a um museu após o horário de funcionamento, você explorará regiões do Cerro Catedral normalmente inacessíveis ao público:</p>
+                                
+                                <div class="exclusive-access">
+                                    <h4>🗝️ Exclusividade Garantida:</h4>
+                                    <ul>
+                                        <li><strong>Acesso restrito:</strong> Área disponível apenas para veículos todo-terreno</li>
+                                        <li><strong>Natureza intocada:</strong> Locais preservados longe das multidões</li>
+                                        <li><strong>Experiência única:</strong> Poucos visitantes têm essa oportunidade</li>
+                                        <li><strong>Cenários virgens:</strong> Paisagens em seu estado mais natural</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="info-section adventure-elements">
+                                <h3>🚀 Elementos da Aventura</h3>
+                                <p>Como uma sinfonia da natureza com diferentes movimentos, a travessia combina múltiplas sensações:</p>
+                                
+                                <div class="adventure-components">
+                                    <div class="component-card speed">
+                                        <strong>💨 Velocidade Controlada:</strong> Emoção do snowmobile em terreno seguro
+                                    </div>
+                                    <div class="component-card nature">
+                                        <strong>🌿 Imersão Natural:</strong> Contato direto com a natureza patagônica
+                                    </div>
+                                    <div class="component-card discovery">
+                                        <strong>🔍 Descoberta:</strong> Cada curva revela uma nova surpresa visual
+                                    </div>
+                                    <div class="component-card serenity">
+                                        <strong>🕊️ Serenidade:</strong> Paz e silêncio das montanhas intocadas
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="info-section perfect-for">
+                                <h3>🎯 Perfeito Para Quem?</h3>
+                                <p>Como uma experiência sob medida, a travessia diurna atende a perfis específicos de aventureiros:</p>
+                                
+                                <div class="target-profiles">
+                                    <ul>
+                                        <li><strong>Aventureiros urbanos:</strong> Que buscam escapar da rotina com emoção</li>
+                                        <li><strong>Amantes da natureza:</strong> Que querem ver paisagens exclusivas</li>
+                                        <li><strong>Fotógrafos:</strong> Em busca de cenários únicos e espetaculares</li>
+                                        <li><strong>Grupos de amigos:</strong> Que valorizam experiências diferenciadas</li>
+                                        <li><strong>Casais aventureiros:</strong> Que querem viver momentos especiais juntos</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="info-section highlight">
+                                <h3>✨ Uma Experiência Única na Natureza</h3>
+                                <p>Como um tesouro escondido nos Andes, a travessia diurna de La Cueva oferece <strong>acesso exclusivo a uma das regiões mais preservadas e espetaculares</strong> do Cerro Catedral. É uma jornada que combina adrenalina, descoberta e contemplação, levando você a lugares onde poucos humanos pisaram. Cada mirante natural, cada riacho cristalino, cada vista incomparável se torna uma memória única que permanecerá gravada para sempre. Não perca esta oportunidade de viver uma aventura verdadeiramente exclusiva na Patagônia!</p>
+                            </div>
+                            
+
+                        </div>    
+                    </div>
+                    <div class="onde-comprar-content">
+                        <div class="onde-comprar-lista">
+                            <a href="https://www.lacuevacatedral.com/productos/travesa-diurna" target="_blank">La Cueva - Travessia diurna</a>
+                            
+                        </div>
+                    </div>
+                </div>
+                <!-- LA CUEVA -->
+
+
+            </div>
+        </div>
+
+
+
+        <!-- DIA 7 -->
+        <div class="day-section">
+            <div class="day-header">📅 Dia 7 - Montanha e aventura</div>
+            <div class="activities-grid">
+
+                <!-- CERRO TRONADOR -->
+                <!-- <div class="activity-card" data-type="nature">
+                    <div class="activity-type type-nature">Aventura</div>
+                    <div class="activity-header">
+                        <div>
+                            <div class="activity-title">Cerro Tronador</div>
+                            <div class="activity-time">Dia todo</div>
+                        </div>
+                    </div>
+                    <div class="price-tag">R$ 660</div>
+                    <div class="activity-description">
+                        Passeio de dia inteiro para a montanha mais imponente da região, com paradas em cachoeiras e mirantes de tirar o fôlego.
+                    </div>
+                    <div class="activity-details">
+                        <div class="detail-item selectable-detail">
+                            <input type="checkbox" class="detail-checkbox" data-value="660" data-moeda="brl" id="tronador">
+                            <label for="tronador">Passeio completo: R$ 660</label>
+                        </div>
+                    </div>
+                    <div class="acoes-passeio">
+                        <span class="acao-link saiba-mais" onclick="toggleSaibaMais(this)">📖 Saiba Mais ▼</span>
+                        <span class="acao-link onde-comprar-link" onclick="toggleDropdown(this)">💳 Onde Comprar ▼</span>
+                    </div>
+                    <div class="saiba-mais-content">
+                        <div class="saiba-mais-text">
+                            O Tronador é o ponto mais alto da região! O passeio é cheio de paisagens deslumbrantes, cachoeiras congeladas e vista dos glaciares. A parada no Ventisquero Negro é imperdível!
+                        </div>
+                    </div>
+                    <div class="onde-comprar-content">
+                        <div class="onde-comprar-lista">
+                            <a href="https://www.tangol.com/por/argentina/bariloche/passeios/passeios-de-dia-inteiro/cerro-tronador_t_2242" target="_blank">Tangol Tours</a>
+                            <a href="https://www.civitatis.com/pt/bariloche/excursao-cerro-tronador/" target="_blank">Civitatis</a>
+                            <a href="https://www.turisur.com.ar/pt/excursiones/bariloche/cerro-tronador" target="_blank">Turisur</a>
+                            <div class="onde-comprar-fisico"><b>Bariloche Select Travel:</b> Palacios 77 (Centro)</div>
+                            <div class="onde-comprar-fisico"><b>Destino Andino:</b> Mitre 219 (Centro)</div>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- CERRO TRONADOR -->
+
+
+                <!-- NOCHE NÓRDICA -->
+                <div class="activity-card" data-type="gastronomy" style="transform: translateY(0px) scale(1);">
+                    <div class="activity-type type-gastronomy">Premium</div>
+                    <div class="activity-header">
+                        <div>
+                            <div class="activity-title">Noche Nórdica</div>
+                            <div class="activity-time">Noite</div>
+                        </div>
+                    </div>
+                    <div class="price-tag price-expensive">$275 USD</div>
+                    <div class="activity-description">
+                        Experiência sensorial completa: São 3h30m de passeio, com travessia de 40min com quadriciclos/motos + jantar gourmet em restaurante de montanha.
+                    </div>
+                    <div class="activity-details">
+                        <div class="detail-item">
+                            <div class="detail-icon"></div>
+                            <span>Inclui: veículos, vinho quente, jantar, transfer</span>
+                        </div>
+                        <span class="divisor"></span>
+                        <div class="detail-item selectable-detail">
+                            <input type="checkbox" class="detail-checkbox" data-value="275" data-moeda="usd" id="noche_nordica">
+                            <label for="noche_nordica"><span class="atracao">Noche Nórdica c/ transfer</span>: <span class="preco">$275 USD</span></label>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="acoes-passeio">
+                        <span class="acao-link saiba-mais" onclick="toggleSaibaMais(this)">📖 Saiba Mais ▼</span>
+                        <span class="acao-link onde-comprar-link" onclick="toggleDropdown(this)">💳 Onde Comprar ▼</span>
+                    </div>
+                    <div class="saiba-mais-content">
+                        <div class="saiba-mais-text">
+                            <div class="info-section intro">
+                                <h3>🌲 Uma Jornada Épica pela Floresta Patagônica</h3>
+                                <p>Como uma <strong>expedição nórdica pelos contos de fada</strong>, o Noche Nórdica leva você através dos bosques de lengas nevados a <strong>1.300m de altitude</strong> no Cerro Otto, criando memórias que durarão para sempre!</p>
+                            </div>
+
+                            <div class="info-section adventure">
+                                <h3>🏍️ Aventura Noturna Mágica</h3>
+                                <p>Como exploradores árticos modernos, você percorrerá a floresta nevada em uma jornada inesquecível:</p>
+                                
+                                <div class="adventure-details">
+                                    <h4>❄️ Detalhes da Aventura:</h4>
+                                    <ul>
+                                        <li><strong>Duração da travessia:</strong> 40 minutos através dos bosques de lengas</li>
+                                        <li><strong>Veículos:</strong> Quadriciclos CAN-AM 4x4 ou motos de neve (conforme condições)</li>
+                                        <li><strong>Parada especial:</strong> Clareira com fogueira sob as estrelas</li>
+                                        <li><strong>Degustação:</strong> Vinho quente ou chocolate patagônico ao ar livre</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="info-section gastronomy">
+                                <h3>🍽️ Refúgio Gastronômico</h3>
+                                <p>Como um banquete viking em plena montanha, o jantar completo no Centro de Ski Nórdico oferece o melhor da culinária patagônica:</p>
+                                
+                                <div class="menu-details">
+                                    <h4>🥘 Menu Completo:</h4>
+                                    <div class="menu-item">
+                                        <strong>Entrada:</strong> Empanadas artesanais da casa
+                                    </div>
+                                    <div class="menu-item">
+                                        <strong>Aquecimento:</strong> Sopinha de abóbora cremosa
+                                    </div>
+                                    <div class="menu-item">
+                                        <strong>Tábua:</strong> Variedade de queijos e defumados regionais
+                                    </div>
+                                    <div class="menu-item highlight-dish">
+                                        <strong>Prato Principal:</strong> Fondue de 4 queijos (o melhor da Patagônia!)
+                                    </div>
+                                    <div class="menu-item">
+                                        <strong>Sobremesas:</strong> Marquise de chocolate com geleia de framboesa e mousse de doce de leite
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="info-section drinks">
+                                <h3>🍷 Bebidas Premium</h3>
+                                <p>Como uma adega de montanha, oferece seleção premium à vontade em ambiente rústico com lareira e música ambiente:</p>
+                                
+                                <div class="drinks-selection">
+                                    <h4>🥂 Seleção de Bebidas:</h4>
+                                    <ul>
+                                        <li><strong>Vinhos reservas</strong> selecionados</li>
+                                        <li><strong>Cervejas Patagônia</strong> artesanais</li>
+                                        <li><strong>Champagne</strong> para momentos especiais</li>
+                                        <li><strong>Bebidas sem álcool</strong> variadas</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="info-section ambiance">
+                                <h3>🔥 Ambiente Único</h3>
+                                <p>Como uma cabana nórdica autêntica, o Centro de Ski oferece:</p>
+                                
+                                <div class="ambiance-features">
+                                    <ul>
+                                        <li><strong>Ambiente rústico e acolhedor</strong> em plena montanha</li>
+                                        <li><strong>Lareira crepitante</strong> para aquecimento natural</li>
+                                        <li><strong>Música ambiente</strong> para completar a experiência</li>
+                                        <li><strong>Vista panorâmica</strong> dos bosques nevados</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="info-section logistics">
+                                <h3>⏰ Logística Perfeita</h3>
+                                <p>Como um tour organizado profissionalmente, todos os detalhes estão cuidados:</p>
+                                
+                                <div class="logistics-info">
+                                    <h4>📋 Informações Práticas:</h4>
+                                    <ul>
+                                        <li><strong>Duração total:</strong> 4 horas de experiência completa</li>
+                                        <li><strong>Transfer incluído:</strong> Ida e volta</li>
+                                        <li><strong>Horários disponíveis:</strong> 19h, 20h30 ou 22h</li>
+                                        <li><strong>Menores de 16 anos:</strong> Vão na garupa com acompanhante</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="info-section highlight">
+                                <h3>✨ Experiência Completa Única</h3>
+                                <p>Como poucos lugares no mundo conseguem oferecer, o Noche Nórdica combina perfeitamente <strong>adrenalina, natureza e gastronomia de alto nível</strong> em uma experiência que toca todos os sentidos. É uma noite que marca para sempre - desde a aventura através da floresta iluminada pelos faróis até o jantar aconchegante junto à lareira, com vista para a imensidão nevada da Patagônia!</p>
+                            </div>
+
+                            <div class="info-section safety">
+                                <h3>👨‍👩‍👧‍👦 Informações de Segurança</h3>
+                                <div class="safety-notes">
+                                    <ul>
+                                        <li><strong>Menores de 16 anos:</strong> Acompanham na garupa</li>
+                                        <li><strong>Equipamentos:</strong> Fornecidos e obrigatórios</li>
+                                        <li><strong>Condições climáticas:</strong> Atividade sujeita ao tempo</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="onde-comprar-content">
+                        <div class="onde-comprar-lista">
+                            <a href="https://www.zigzagtravel.com.ar/pb/catalogo/san_carlos_de_bariloche-245/noite_nordica-55.html" target="_blank">ZigZag</a>
+                            <a href="https://www.nochenordica.com/" target="_blank">Noche Nórdica</a>
+                            
+                        </div>
+                    </div>    
+                </div>
+                <!-- NOCHE NÓRDICA -->
+
+
+            </div>
+        </div>
+
+
+
+        <!-- DIA 8 -->
+        <div class="day-section">
+            <div class="day-header">📅 Dia 8 - Despedida</div>
+            <div class="activities-grid">                
+                
+                
+                <!-- ALMOÇO DE DESPEDIDA -->
+                <div class="activity-card" data-type="centro">
+                    <div class="activity-type type-culture">Centro</div>
+                    <div class="activity-header">
+                        <div>
+                            <div class="activity-title">Almoço de despedida</div>
+                            <div class="activity-time">Almoço</div>
+                        </div>
+                    </div>
+                    <div class="price-tag price-variable">Variável</div>
+                    <div class="activity-description">
+                        Último momento para experimentar a culinária típica de Bariloche em um dos muitos restaurantes do centro. Sugestão: parrilla e chocolate!
+                    </div>
+                </div>
+                <!-- ALMOÇO DE DESPEDIDA -->
+
+
+            </div>
+        </div>
+
+        <!-- LEGENDA -->
+        <!-- <div class="legend">
+            <div class="legend-item"><span class="legend-color" style="background: #ffeb3b;"></span> Aventura</div>
+            <div class="legend-item"><span class="legend-color" style="background: #e3f2fd;"></span> Natureza</div>
+            <div class="legend-item"><span class="legend-color" style="background: #e8f5e8;"></span> Cultura</div>
+            <div class="legend-item"><span class="legend-color" style="background: #fff3e0;"></span> Gastronomia</div>
+            <div class="legend-item"><span class="legend-color" style="background: #4CAF50;"></span> Gratuito</div>
+        </div> -->
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
