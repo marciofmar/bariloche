@@ -233,7 +233,7 @@ body {
     
     color: #555;
     position: fixed;
-    top: 25px;
+    top: 15px;
     left: 5px;
     background: #fff;
     
@@ -275,7 +275,7 @@ body {
 /* Painel total */
 #painel-total {
     position: fixed;
-    top: 25px;
+    top: 15px;
     right: 40px;
     background: #fff;
     color: #222;
@@ -300,6 +300,7 @@ body {
     
     font-size: 0.75em;
     color: #555;
+    text-align: center;
    
     
 } 

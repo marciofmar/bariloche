@@ -53,7 +53,7 @@ function atualizarTotal() {
 function atualizarCotacaoPainel() {
     const painelCot = document.getElementById('painel-cotacao');
     painelCot.innerHTML =
-        `<span>Cotação atual: 1 BRL = ${cotacao.ars ? cotacao.ars.toFixed(2) : "-"} ARS | 1 USD = ${cotacao.usd ? cotacao.usd.toFixed(2) : "-"} BRL</span>`;
+        `<span>Cotação atual: 1 BRL <br> ${cotacao.ars ? cotacao.ars.toFixed(2) : "-"} ARS | 1 USD = ${cotacao.usd ? cotacao.usd.toFixed(2) : "-"} BRL</span>`;
 }
 
 function carregarCotacao(callback) {
@@ -156,7 +156,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         document.getElementById('baixar_txt').addEventListener('click', function() {
             // Pega o conteúdo do <pre>
-            const texto = 'Gasto médio com refeição (12 dias): $540 USD / R$ 3078,00\n\n\nLista de atividades selecionadas: \n'
+            const texto = 'Gasto médio com refeição (12 dias):\n $540 USD / R$ 3078,00\n\n\nLista de atividades selecionadas: \n'
             + document.getElementById('lista_atividades').textContent + 
             '\n\n\nValor total: ' + document.getElementById('painel-total-valor').textContent;
 
@@ -183,7 +183,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const painel = document.createElement('div');
         painel.id = 'painel-total';
         painel.innerHTML = `
-            <span class='refeicao'>Gasto médio com refeição (12 dias): $540 USD / R$ 3078,00</span>
+            <span class='refeicao'>Gasto médio com refeição (12 dias)<br> $540 USD / R$ 3078,00</span>
             <span class='refeicao_description'>Café da manhã + 1 Fast food + 1 restaurante médio alto</span>
             <span>Subtotal selecionado:</span>
             <span id="painel-total-valor">R$ 3078,00</span>
