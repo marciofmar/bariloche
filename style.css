@@ -14,6 +14,71 @@ body {
     padding: 30px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.10);
 }
+
+
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+/* Badge personalizado da família */
+.family-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: linear-gradient(135deg, #ff6b6b, #ee5a52);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 25px;
+    font-size: 0.85em;
+    font-weight: 600;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+    position: relative;
+    animation: gentlePulse 3s ease-in-out infinite;
+}
+
+.family-icon {
+    font-size: 1.1em;
+    animation: familyWave 2s ease-in-out infinite;
+}
+
+.family-name {
+    letter-spacing: 0.5px;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+/* Animações sutis */
+@keyframes gentlePulse {
+    0%, 100% { 
+        transform: scale(1);
+        box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+    }
+    50% { 
+        transform: scale(1.02);
+        box-shadow: 0 6px 20px rgba(255, 107, 107, 0.4);
+    }
+}
+
+@keyframes familyWave {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(-5deg); }
+    75% { transform: rotate(5deg); }
+}
+
+/* Efeito hover */
+.family-badge:hover {
+    transform: scale(1.05);
+    cursor: default;
+    box-shadow: 0 6px 25px rgba(255, 107, 107, 0.4);
+}
+
+.header h1 {font-size: 2.5em; font-weight: 700;}
+.header p {font-size: 1.2em; color: #666;}
+
+
+
 .header {
     text-align: center;
     margin-bottom: 40px;
@@ -396,10 +461,300 @@ strong {
 
 
 
+
+
+
+
+/* Sistema de avaliação com corações */
+.rating-container {
+    margin-top: 10px;
+    padding: 8px 0;
+    border-top: 1px solid #e0e0e0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.rating-label {
+    font-size: 12px;
+    color: #666;
+    font-weight: 500;
+    min-width: 60px;
+}
+
+.rating-hearts {
+    display: flex;
+    gap: 4px;
+}
+
+.heart {
+    font-size: 18px;
+    color: #ddd;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    user-select: none;
+}
+
+.heart:hover {
+    transform: scale(1.1);
+    color: #ff6b6b;
+}
+
+.heart.filled {
+    color: #ff4757;
+}
+
+.heart.active {
+    animation: heartBeat 0.3s ease;
+}
+
+@keyframes heartBeat {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+/* Responsividade */
+/* @media (max-width: 768px) {
+    .rating-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+    }
+    
+    .rating-label {
+        font-size: 11px;
+        min-width: auto;
+    }
+    
+    .heart {
+        font-size: 16px;
+    }
+} */
+/* Sistema de abas para o painel */
+.painel-tabs {
+    display: flex;
+    margin-bottom: 8px;
+    gap: 0;
+    background: #f5f5f5;
+    border-radius: 6px 6px 0 0;
+    border: 1px solid #ddd;
+    border-bottom: none;
+}
+
+.tab-button {
+    background: #f8f8f8;
+    color: #666;
+    border: none;
+    padding: 6px 8px;
+    cursor: pointer;
+    font-size: 8px;
+    font-weight: 600;
+    border-radius: 0;
+    transition: all 0.2s ease;
+    flex: 1;
+    text-align: center;
+    line-height: 1.2;
+    border-right: 1px solid #ddd;
+    position: relative;
+}
+
+.tab-button:first-child {
+    border-radius: 6px 0 0 0;
+}
+
+.tab-button:last-child {
+    border-right: none;
+    border-radius: 0 6px 0 0;
+}
+
+.tab-button.active {
+    background: #2196f3;
+    color: white;
+    z-index: 2;
+}
+
+.tab-button:hover:not(.active) {
+    background: #e3f2fd;
+    color: #1976d2;
+}
+
+.tab-badge {
+    background: rgba(255, 255, 255, 0.9);
+    color: #2196f3;
+    border-radius: 8px;
+    padding: 1px 3px;
+    font-size: 7px;
+    margin-left: 2px;
+    font-weight: bold;
+    display: inline-block;
+    min-width: 10px;
+    text-align: center;
+}
+
+.tab-button.active .tab-badge {
+    background: rgba(255, 255, 255, 1);
+    color: #1565c0;
+}
+
+/* CONTEÚDO DAS ABAS - IMPORTANTE: display none por padrão */
+.tab-content {
+    display: none;
+    padding: 8px 4px;
+    background: white;
+    border: 1px solid #ddd;
+    border-top: none;
+    border-radius: 0 0 6px 6px;
+    min-height: 100px;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.tab-content strong {
+    font-size: 9px;
+    color: #333;
+    display: block;
+    margin-bottom: 6px;
+}
+
+/* Lista de avaliações */
+.avaliacoes-lista {
+    font-size: 8px;
+    line-height: 1.3;
+    max-height: 120px;
+    overflow-y: auto;
+    padding-right: 4px;
+}
+
+.avaliacoes-lista::-webkit-scrollbar {
+    width: 4px;
+}
+
+.avaliacoes-lista::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 2px;
+}
+
+.avaliacoes-lista::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 2px;
+}
+
+.avaliacao-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 3px 0;
+    border-bottom: 1px solid #f0f0f0;
+    gap: 4px;
+}
+
+.avaliacao-item:last-child {
+    border-bottom: none;
+}
+
+.avaliacao-nome {
+    flex: 1;
+    font-weight: 500;
+    color: #333;
+    font-size: 7px;
+    line-height: 1.2;
+    word-wrap: break-word;
+}
+
+.avaliacao-coracao {
+    font-size: 8px;
+    color: #ff4757;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+/* Mensagem quando vazio */
+.no-avaliacoes {
+    color: #999;
+    font-style: italic;
+    text-align: center;
+    padding: 12px 4px;
+    font-size: 7px;
+    line-height: 1.3;
+}
+
+/* Botão de download */
+#baixar_txt {
+    background-color: #e6f0ff;
+    color: #003366;
+    border: 1px solid #99c2ff;
+    border-radius: 6px;
+    padding: 6px 8px;
+    font-weight: bold;
+    font-size: 8px;
+    cursor: pointer;
+    margin-top: 8px;
+    width: 100%;
+    transition: background-color 0.2s ease;
+}
+
+#baixar_txt:hover {
+    background-color: #cce0ff;
+}
+
+/* Lista de atividades */
+#lista_atividades {
+    font-size: 8px;
+    line-height: 1.3;
+    margin: 6px 0;
+    max-height: 100px;
+    overflow-y: auto;
+    background: #f9f9f9;
+    padding: 6px;
+    border-radius: 4px;
+    border: 1px solid #e0e0e0;
+    white-space: pre-wrap;
+}
+
+#lista_atividades::-webkit-scrollbar {
+    width: 4px;
+}
+
+#lista_atividades::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 2px;
+}
+
+#lista_atividades::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 2px;
+}
+
+/* Ajustar painel */
+#painel-atividades {
+    min-width: 190px;
+    max-width: 210px;
+}
+
+
 @media (max-width: 768px) {
     .container {padding: 13px; margin: 6px;}
     .activities-grid {grid-template-columns: 1fr;}
     .filters {justify-content: flex-start;}
     .header h1 {font-size: 2em;}
     #painel-total {position: static; margin-bottom: 16px;}
+
+    /* Sistema de avaliação com corações */
+    .rating-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+    }
+    
+    .rating-label {
+        font-size: 11px;
+        min-width: auto;
+    }
+    
+    .heart {
+        font-size: 16px;
+    }
 }
