@@ -94,7 +94,7 @@ function carregarCotacao(callback) {
             if (callback) callback();
         })
         .catch(() => {
-            cotacao.ars = 213; // fallback
+            cotacao.ars = 256; // fallback
             cotacao.usd = 5.31;
             atualizarCotacaoPainel();
             if (callback) callback();
@@ -586,3 +586,4 @@ window.limparAvaliacoes = limparAvaliacoes;
 window.resetarSistema = resetarSistema;
 
 window.removerRating = removerRating;
+
