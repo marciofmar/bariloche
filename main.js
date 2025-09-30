@@ -534,7 +534,7 @@ function criarPaineis() {
         painel.id = 'painel-total';
         painel.innerHTML = `
             <span class='refeicao'>Gasto médio com refeição (12 dias)<br> $540 USD / R$ 3078,00</span>
-            <span class='refeicao_description'>Café da manhã + 1 Fast food + 1 restaurante médio alto</span>
+            <span class='refeicao_description'>Café da manhã + 1 almoço simples + 1 restaurante médio alto</span>
             <span>Subtotal selecionado:</span>
             <span id="painel-total-valor">R$ 3078,00</span>
             <span id="painel-cotacao"></span>`;
@@ -586,4 +586,5 @@ window.limparAvaliacoes = limparAvaliacoes;
 window.resetarSistema = resetarSistema;
 
 window.removerRating = removerRating;
+
 
