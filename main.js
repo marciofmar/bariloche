@@ -512,7 +512,7 @@ function criarPaineis() {
         // Event listener para download
         document.getElementById('baixar_txt').addEventListener('click', function() {
             const texto = 'ROTEIRO FAMÍLIA MELO MORAES MARADEI\n\n' +
-                'Gasto médio com refeição (12 dias):\n $540 USD / R$ 3078,00\n\n\n' +
+                'Gasto médio com refeição (12 dias):\n $565 USD / R$ 3000,00\n\n\n' +
                 'Lista de atividades selecionadas: \n' +
                 document.getElementById('lista_atividades').textContent + 
                 '\n\n\nValor total: ' + document.getElementById('painel-total-valor').textContent;
@@ -533,7 +533,7 @@ function criarPaineis() {
         const painel = document.createElement('div');
         painel.id = 'painel-total';
         painel.innerHTML = `
-            <span class='refeicao'>Gasto médio com refeição (12 dias)<br> $540 USD / R$ 3078,00</span>
+            <span class='refeicao'>Gasto médio com refeição (12 dias)<br> $565 USD / R$ 3000,00</span>
             <span class='refeicao_description'>Café da manhã + 1 almoço simples + 1 restaurante médio alto</span>
             <span>Subtotal selecionado:</span>
             <span id="painel-total-valor">R$ 3078,00</span>
@@ -586,5 +586,6 @@ window.limparAvaliacoes = limparAvaliacoes;
 window.resetarSistema = resetarSistema;
 
 window.removerRating = removerRating;
+
 
 
